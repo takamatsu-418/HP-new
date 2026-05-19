@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ja" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>サポート規約 | JPYC Gateway</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            green: '#00bb59',
+                            blue: '#0067ff',
+                        },
+                        navy: '#0F172A',
+                    },
+                    fontFamily: {
+                        sans: ['"Inter"', '"Noto Sans JP"', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body { font-family: "Inter", "Noto Sans JP", sans-serif; color: #1E293B; background-color: #FFFFFF; }
+        .text-gradient {
+            background: linear-gradient(135deg, #00bb59 0%, #0067ff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        /* 規約文のスタイル */
+        .terms-content h3 {
+            @apply text-xl font-black text-navy mt-12 mb-6 border-l-4 border-brand-green pl-4;
+        }
+        .terms-content p {
+            @apply text-slate-600 leading-loose mb-4 font-medium;
+        }
+        .terms-content ol {
+            @apply list-decimal ml-6 mb-6 space-y-2 text-slate-600 font-medium;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <header class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-100">
+        <div class="container mx-auto px-6 h-24 flex items-center justify-between">
+            <div class="flex items-center">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="JPYC Gateway" class="h-8 md:h-10 w-auto">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="pt-48 pb-20 bg-slate-50">
+        <div class="container mx-auto px-6 text-center">
+            <span class="inline-block py-1 px-4 rounded-full bg-brand-green/10 text-brand-green text-sm font-black mb-6 tracking-widest uppercase">SUPPORT Terms</span>
+            <h1 class="text-4xl md:text-6xl font-black text-navy tracking-tight">サポート規約</h1>
+            <p class="mt-6 text-slate-400 font-bold">最終更新日：2026年5月19日</p>
+        </div>
+    </section>
+
+    <main class="py-24">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <div class="terms-content">
+                <p>アステリア株式会社（以下「弊社」という）は、JPYC Gateway（以下「本サービス」といいます。）の利用者（以下「利用者」という）に対し、下記の通りサポート・サービス（以下「本サポート」といいます。）を実施いたします。</p>
+
+                <h3 class="text-xl font-black text-navy mt-12 mb-6 border-l-4 border-brand-green pl-4">Ⅰ. サービス内容</h3>
+                <ol class="list-decimal list-outside ml-8 space-y-4 text-slate-600 font-medium">
+                    <li>本サービスの使用に関するガイダンス: 本サービスの操作方法および仕様に関する問い合わせへの応答。</li>
+                    <li>情報の通知と提供: 本サービスのアップデート、メンテナンス情報、および推奨される利用環境（対応ウォレット、対応ネットワーク等）の通知。</li>
+                    <li>不具合の調査: 本サービスそのものに起因するシステムエラーの受付および調査。</li>
+                </ol>
+
+                <h3 class="text-xl font-black text-navy mt-12 mb-6 border-l-4 border-brand-green pl-4">Ⅱ. 前提条件</h3>
+                <ol class="list-decimal list-outside ml-8 space-y-4 text-slate-600 font-medium">
+                    <li>ソフトウェア・ライセンス: 本サポートは、利用者が弊社の定める利用規約に同意し、適法に本サービスを使用する権利を有している場合にのみ適用されます。</li>
+                    <li>情報の提示: 問い合わせにあたり、弊社が必要と判断した場合には、対象となるトランザクションハッシュ（TxID）、使用したウォレットアドレス、および発生した事象のスクリーンショット等の情報の提示を条件とします。</li>
+                </ol>
+
+                <h3 class="text-xl font-black text-navy mt-12 mb-6 border-l-4 border-brand-green pl-4">Ⅲ. サービスレベルへの取組（SLA）</h3>
+                <p class="mb-4">弊社は、本サービスの提供にあたり、以下の通りサービス品質の維持に努めます。</p>
+                <ol class="list-decimal list-outside ml-8 space-y-4 text-slate-600 font-medium">
+                    <li>稼働目標: 弊社は、対象となる本サービスにおいて、月間稼働率（暦月の総分数からダウンタイムを差し引いた割合）が99.9%以上となるよう、商業的に合理的な努力を尽くします。</li>
+                    <li>ダウンタイムの定義: 弊社のサーバーおよび管理下にあるシステムに基づき、利用者が本サービスのプラットフォーム機能を一切利用できない時間を指します。ただし、次条に定める除外事項に該当する時間は含まれません。</li>
+                </ol>
+
+                <h3 class="text-xl font-black text-navy mt-12 mb-6 border-l-4 border-brand-green pl-4">Ⅳ. サービスの制限および除外</h3>
+                <div class="ml-0 space-y-4 text-slate-600 font-medium">
+                    <p class="mb-4">本サポートおよび前条の稼働目標の対象には、次の内容に関する事項は含まれていません。</p>
+                    <ol class="list-decimal list-outside ml-8 space-y-4 text-slate-600 font-medium">
+                    <li>外部ネットワーク要因: 各種ブロックチェーンネットワークの混雑、停止、仕様変更、またはノードの不具合。</li>
+                    <li>サードパーティ要因: クラウドプロバイダー、外部インフラ基盤、または弊社が採用する外部サービスの停止・不具合のうち、弊社の合理的な制御を超えるもの。</li>
+                    <li>データの回復: 誤送金による資産の紛失、秘密鍵の管理不備、シードフレーズの漏洩等、ブロックチェーンの特性上弊社で制御不能な事象。</li>
+                    <li>その他: 弊社製品が予定しない動作環境を原因とする障害、事前に通知された計画的なメンテナンス、および不可抗力（天災、テロ、法的規制等）による停止。</li>
+                </ol>
+                </div>
+
+                <h3 class="text-xl font-black text-navy mt-12 mb-6 border-l-4 border-brand-green pl-4">Ⅴ. サポート窓口</h3>
+                <div class="ml-0 space-y-4 text-slate-600 font-medium">
+                    <p class="mb-4">弊社は利用者に対して以下の本サポートの窓口を設置します。</p>
+                    <ol class="list-decimal list-outside ml-8 space-y-4 text-slate-600 font-medium">
+                    <li>問い合わせ窓口：jpycg-support@asteria.com</li>
+                    <li>応答時間: 問い合わせに対しては、弊社サポート・サービス担当者による受付日を基準として3営業日以内に一次回答（受領確認および必要に応じた追加情報の要求）をいたします。</li>
+                    <li>サポート提供時間：原則、土日祝祭日並びに弊社指定の年末年始及び夏期休暇を除く平日（9:00-12:30、13:30-17:00）。</li>
+                </ol>
+                </div>
+
+                <h3 class="text-xl font-black text-navy mt-12 mb-6 border-l-4 border-brand-green pl-4">Ⅵ. セキュリティに関する重要事項</h3>
+                <div class="ml-0 space-y-4 text-slate-600 font-medium">
+                    <p class="mb-4">機密情報の管理: 本サポートの提供にあたり、弊社スタッフが利用者の「秘密鍵」や「リカバリーフレーズ」、および「キーシェア」を伺うことは一切ありません。利用者は自社の責任においてこれらの機密情報を厳重に管理するものとし、弊社は開示による損害について一切の責任を負いません。</p>
+                </div>
+
+                <h3 class="text-xl font-black text-navy mt-12 mb-6 border-l-4 border-brand-green pl-4">Ⅶ. 免責事項</h3>
+                <div class="ml-0 space-y-4 text-slate-600 font-medium">
+                    <p class="mb-4">弊社は、お客様の全ての不都合や不明点を完全に解決することを保証するものではありません。</p>
+                </div>
+
+                <h3 class="text-xl font-black text-navy mt-12 mb-6 border-l-4 border-brand-green pl-4">Ⅷ. 利用規約との関係</h3>
+                <div class="ml-0 space-y-4 text-slate-600 font-medium">
+                    <p class="mb-4">本規約に定めのない事項については、JPYC Gateway 利用規約の規定が適用されるものとします。</p>
+                </div>
+
+                <p class="text-right text-slate-600 font-bold mt-12 mb-20">以上</p>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-navy pt-24 pb-12 text-white/90 border-t border-white/10">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row justify-between gap-20 mb-20">
+                <div class="max-w-xs">
+                    <div class="flex items-center">
+                         <a href="#">
+                             <img src="img/logo_white.svg" alt="JPYC Gateway" class="h-12 md:h-16 w-auto">
+                        </a>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-12">
+                    <div class="space-y-4">
+                        <p class="font-black text-white text-xs tracking-widest">PRODUCT</p>
+                        <ul class="space-y-3 text-sm font-bold text-slate-400">
+                            <li><a href="#" class="hover:text-brand-green transition">機能一覧</a></li>
+                            <li><a href="#" class="hover:text-brand-green transition">連携システム</a></li>
+                            <li><a href="#" class="hover:text-brand-green transition">JPYCについて</a></li>
+                        </ul>
+                    </div>
+                    <div class="space-y-4">
+                        <p class="font-black text-white text-xs tracking-widest">RESOURCES</p>
+                        <ul class="space-y-3 text-sm font-bold text-slate-400">
+                            <li><a href="#" class="hover:text-brand-green transition">導入事例</a></li>
+                            <li><a href="#" class="hover:text-brand-green transition">ブログ</a></li>
+                            <li><a href="#" class="hover:text-brand-green transition">ホワイトペーパー</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row justify-between items-center text-[10px] font-bold text-slate-500 gap-4 pt-8 border-t border-white/5">
+                <p>&copy; 1998-2026 Asteria Corporation. All Rights reserved.</p>
+                <div class="flex gap-8">
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="hover:text-white transition">利用規約</a>
+                    <a href="https://www.asteria.com/jp/privacy/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition">プライバシーポリシー</a>
+                    <a href="https://jp.asteria.com/company/profile/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition">会社概要</a>
+                    <a href="https://www.asteria.com/jp/terms/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition">アステリア製品共通利用規約</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

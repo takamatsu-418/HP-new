@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ja" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>利用規約 | JPYC Gateway</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            green: '#00bb59',
+                            blue: '#0067ff',
+                        },
+                        navy: '#0F172A',
+                    },
+                    fontFamily: {
+                        sans: ['"Inter"', '"Noto Sans JP"', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body { font-family: "Inter", "Noto Sans JP", sans-serif; color: #1E293B; background-color: #FFFFFF; }
+        .text-gradient {
+            background: linear-gradient(135deg, #00bb59 0%, #0067ff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        /* 規約文のスタイル */
+        .terms-content h3 {
+            @apply text-xl font-black text-navy mt-12 mb-6 border-l-4 border-brand-green pl-4;
+        }
+        .terms-content p {
+            @apply text-slate-600 leading-loose mb-4 font-medium;
+        }
+        .terms-content ol {
+            @apply list-decimal ml-6 mb-6 space-y-2 text-slate-600 font-medium;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <header class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-100">
+        <div class="container mx-auto px-6 h-24 flex items-center justify-between">
+            <div class="flex items-center">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="JPYC Gateway" class="h-8 md:h-10 w-auto">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="pt-48 pb-20 bg-slate-50">
+        <div class="container mx-auto px-6 text-center">
+            <span class="inline-block py-1 px-4 rounded-full bg-brand-green/10 text-brand-green text-sm font-black mb-6 tracking-widest uppercase">
+                Terms of Service
+            </span>
+            <h1 class="text-4xl md:text-6xl font-black text-navy tracking-tight">利用規約</h1>
+            <p class="mt-6 text-slate-400 font-bold">最終更新日：2026年5月19日</p>
+        </div>
+    </section>
+
+    <main class="py-24">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <div class="terms-content">
+                <p>アステリア株式会社（以下「当社」といいます。）は、日本円連動型ステーブルコイン「JPYC」の送金管理、残高照会等の機能を提供するクラウドサービス「JPYC Gateway」（以下「本サービス」といいます。）の利用条件を以下の通り定めます。お客様は、本サービスの利用を行った時点で、本規約および「アステリア製品共通利用規約」に同意したものとみなされます。なお、本規約は「アステリア製品共通利用規約」に優先して適用されるものとし、本規約に規定のない事項（本サービスの変更・停止、免責、個人情報の取扱い等を含むがこれらに限られない）については「アステリア製品共通利用規約」に従うものとします。</p>
+
+                <h3 class="text-xl font-black text-navy mt-12 mb-6 border-l-4 border-brand-green pl-4">Ⅰ. 利用権および利用登録</h3>
+                <ol class="list-decimal list-outside ml-8 space-y-4 text-slate-600 font-medium">
+                    <li>本サービスおよび本サービスに付随する文書、コンテンツ、名称やロゴなどの著作権、商標権その他一切の権利は、当社または当社が使用許諾を受けている第三者に帰属し、日本およびお客様の国で適用される法令により保護されています。当社はお客様に対し、本規約に基づき、本サービスにアクセスし利用するための、非独占的、譲渡不能な利用権を付与します。</li>
+                    <li>お客様は、本規約の内容を承諾のうえ、当社所定のWeb申込フォームによる利用申請その他当社の定める方法により、本サービスの利用のための申込みを行います。本サービスの利用契約は、当社が電子メールの送信その他当社が指定する方法により当該申込みを承諾したときに成立し、本規約は、利用契約の一部を構成します。利用契約締結前に相互に取り交わした合意事項、各種資料、申入れ等が本規約の内容と相違する場合は、本規約の内容が優先されます。</li>
+                    <li>当社は、前項の規定にかかわらず、次の場合には、その利用契約の申込みを承諾しない、あるいは承諾を留保することがあります。
+                        <ul class="list-none mt-4 space-y-4 text-slate-600 font-medium">
+                            <li class="flex items-start">
+                                <span class="w-12 flex-shrink-0 text-center mr-2 font-normal">（ア）</span>
+                                <span>お客様が虚偽の事実を申告したとき</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="w-12 flex-shrink-0 text-center mr-2 font-normal">（イ）</span>
+                                <span>利用申込内容に不備があるとき</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="w-12 flex-shrink-0 text-center mr-2 font-normal">（ウ）</span>
+                                <span>お客様が本サービスの利用にかかる料金の支払を怠るおそれがあるとき</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="w-12 flex-shrink-0 text-center mr-2 font-normal">（エ）</span>
+                                <span>本サービスの提供が技術上困難なとき</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="w-12 flex-shrink-0 text-center mr-2 font-normal">（オ）</span>
+                                <span>お客様が過去に当社との契約に違反したことがあるとき</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="w-12 flex-shrink-0 text-center mr-2 font-normal">（カ）</span>
+                                <span>お客様が同業他社であるとき</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="w-12 flex-shrink-0 text-center mr-2 font-normal">（キ）</span>
+                                <span>本サービスの利用目的が、評価、解析その他本サービスの本来の目的と異なるものであると疑われるとき</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="w-12 flex-shrink-0 text-center mr-2 font-normal">（ク）</span>
+                                <span>その他当社が不適当と判断する相当な理由があるとき</span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>お客様は、申込みの際に当社に提供した情報につき変更する事由が生じた場合は、当社所定の変更申込書に、変更内容を記入のうえ、当社に提出します。</li>
+                </ol>
+
+                <h3 class="text-xl font-black text-navy mt-12 mb-6 border-l-4 border-brand-green pl-4">Ⅱ. 料金の支払い</h3>
+                <ol class="list-decimal list-outside ml-8 space-y-4 text-slate-600 font-medium">
+                    <li>お客様は、別途定める料金表に従い、基本使用料（前払い）および送金手数料（実績に基づく後払い）を支払うものとします。</li>
+                    <li>支払済みの料金は、理由の如何を問わず返金いたしません。</li>
+                    <li>料金の支払が30日以上遅滞した場合、当社は支払を遅延している部分に対し年利6％相当額の遅延損害金を請求できるものとし、かつ催告なく直ちに本サービスを停止できるものとします。</li>
+                </ol>
+
+                <h3 class="text-xl font-black text-navy mt-12 mb-6 border-l-4 border-brand-green pl-4">Ⅲ. ウォレット管理およびお客様の義務</h3>
+                <ol class="list-decimal list-outside ml-8 space-y-4 text-slate-600 font-medium">
+                    <li>本サービスは、秘密鍵を分散管理する技術（TSS-MPC）を採用した「ノンカストディアル（非預託型）」の形態をとります。当社はお客様の完全な秘密鍵を単独で保持しないため、お客様の明示的な承認操作なしに資産を移動させることはできません。</li>
+                    <li>お客様は、アカウント情報およびウォレットを自己の責任で管理し、自らのユーザーに本規約を遵守させる責任を負います。当社は、不正アクセス、アカウント情報の漏洩その他アカウント管理の不具合によるJPYCの消失等について一切の責任を負いません。</li>
+                    <li>お客様は、セキュリティインシデント（不正アクセス等）を検知した場合、直ちに当社へ通知し、当社の調査に誠実に協力するものとします。</li>
+                </ol>
+
+                <h3 class="text-xl font-black text-navy mt-12 mb-6 border-l-4 border-brand-green pl-4">Ⅳ. お客様の禁止事項</h3>
+                <div class="ml-0 space-y-4 text-slate-600 font-medium">
+                    <p class="mb-4">お客様は、本サービスの利用において以下の行為を行えません。</p>
+                    <ul class="list-none space-y-4">
+                        <li class="flex items-start">
+                            <span class="w-8 flex-shrink-0 text-center mr-2 font-normal">a.</span>
+                            <span>当社もしくは第三者の著作権、商標権等の知的財産権を侵害する行為、または、侵害するおそれのある行為</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="w-8 flex-shrink-0 text-center mr-2 font-normal">b.</span>
+                            <span>当社もしくは第三者の財産、プライバシーもしくは肖像権を侵害する行為、または、侵害するおそれのある行為</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="w-8 flex-shrink-0 text-center mr-2 font-normal">c.</span>
+                            <span>当社もしくは第三者を誹謗中傷・侮辱し、または、当社もしくは第三者の名誉もしくは信用を毀損する行為</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="w-8 flex-shrink-0 text-center mr-2 font-normal">d.</span>
+                            <span>詐欺、恐喝等の犯罪に結びつく行為、または結びつくおそれのある行為</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="w-8 flex-shrink-0 text-center mr-2 font-normal">e.</span>
+                            <span>わいせつ、児童ポルノまたは児童虐待に相当する画像、そのURLを含むトークン等を作成もしくは送信し、販売する行為、または、その作成、送信、販売を想起させる広告を表示または送信する行為</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="w-8 flex-shrink-0 text-center mr-2 font-normal">f.</span>
+                            <span>人の殺害現場、動物を虐待する画像等の残虐な情報、その他社会通念上第三者に著しく嫌悪感を抱かせる情報、そのURLを含むトークン等を作成もしくは送信し、販売する行為、またはその作成、送信、販売を想起させる広告を表示または送信する行為</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="w-8 flex-shrink-0 text-center mr-2 font-normal">g.</span>
+                            <span>第三者になりすまして本サービスを利用する行為</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="w-8 flex-shrink-0 text-center mr-2 font-normal">h.</span>
+                            <span>当社もしくは第三者の設備等の利用、運営に支障を与える行為、または、支障を与えるおそれのある行為</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="w-8 flex-shrink-0 text-center mr-2 font-normal">i.</span>
+                            <span>有害なコンピュータプログラム等を送信もしくは掲載し、または、第三者が受信可能な状態におく行為</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="w-8 flex-shrink-0 text-center mr-2 font-normal">j.</span>
+                            <span>本サービスを構成するハードウェアまたはソフトウェアへの不正アクセス行為、クラッキング行為その他設備等に支障を与える行為</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="w-8 flex-shrink-0 text-center mr-2 font-normal">k.</span>
+                            <span>本サービスの提供を妨害する行為またはそのおそれがある行為</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="w-8 flex-shrink-0 text-center mr-2 font-normal">l.</span>
+                            <span>本サービスを構成するソフトウェアの解析、リバースエンジニアリングその他ソースコードを入手しようとする行為</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="w-8 flex-shrink-0 text-center mr-2 font-normal">m.</span>
+                            <span>当社の事前の書面による同意なしにペネトレーションテストや脆弱性診断を行う行為</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="w-8 flex-shrink-0 text-center mr-2 font-normal">n.</span>
+                            <span>法令に基づき監督官庁等への届出、許認可の取得等の手続が義務づけられている場合に、当該手続を履行せず、その他当該法令に違反する行為</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="w-8 flex-shrink-0 text-center mr-2 font-normal">o.</span>
+                            <span>上記各号の他、法令もしくは公序良俗に違反する行為、当社の信用を毀損し、もしくは、当社の財産を侵害する行為、または、第三者に不利益を与える行為</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <h3 class="text-xl font-black text-navy mt-12 mb-6 border-l-4 border-brand-green pl-4">Ⅴ. 固有の保証および免責</h3>
+                <ol class="list-decimal list-outside ml-8 space-y-4 text-slate-600 font-medium">
+                    <li>当社は、当社の知る限りにおいて本サービスが第三者の知的財産権を侵害していないことを、保証します。</li>
+                    <li>アステリア製品共通利用規約「Ⅳ．免責」に加え、当社は以下の事由により生じた損害（デジタル資産の紛失を含む）について、一切の責任を負いません。</li>
+                        <ul class="list-none space-y-4 text-slate-600 font-medium">
+                            <li class="flex items-start">
+                                <span class="w-12 flex-shrink-0 text-center mr-2 font-normal">（ア）</span>
+                                <span>ブロックチェーンネットワークの遅延、停止、または仕様変更。</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="w-12 flex-shrink-0 text-center mr-2 font-normal">（イ）</span>
+                                <span>JPYCの発行体に起因する価値毀損または償還停止。</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="w-12 flex-shrink-0 text-center mr-2 font-normal">（ウ）</span>
+                                <span>お客様による送金先アドレスの入力誤り、または不適切な導入・使用。</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="w-12 flex-shrink-0 text-center mr-2 font-normal">（エ）</span>
+                                <span>当社が利用するサードパーティ製インフラ（Fireblocks等）の予期せぬ不具合。</span>
+                            </li>                                    
+                        </ul>
+                    <li>本サービスの不具合その他の事情により、お客様が所有または管理するJPYCの消失、破損または盗難等が生じた場合でも、何ら責任を負いません。但し、当社に故意または重大な過失がある場合を除きます。</li>
+                    <li>当社は、当社が本規約に違反しお客様に損害を生じさせた場合であっても、お客様の逸失利益、間接的損害、特別損害、偶発的損害、結果的損害、または懲罰的損害を含む一切の損害について責任を負いません。また、損害賠償額は、責任の発生原因となる出来事の発生日からさかのぼる12か月間にお客様が当社に支払った金額を上限とします。</li>
+                </ol>
+
+                <h3 class="text-xl font-black text-navy mt-12 mb-6 border-l-4 border-brand-green pl-4">Ⅵ. コンプライアンスおよび国際制裁</h3>
+                <ol class="list-decimal list-outside ml-8 space-y-4 text-slate-600 font-medium">
+                    <li>お客様は、自己および関係者が、米国（OFAC）、英国、または日本政府等が指定する経済制裁対象地域（クリミア、イラン、北朝鮮等）の居住者ではなく、かつ制裁対象リストに掲載されていないことを表明し、保証するものとします。</li>
+                    <li>お客様および当社は、贈賄・腐敗防止に関係する法令、「犯罪による収益の移転防止に関する法律（犯収法）」、「組織的犯罪処罰法」、「外国為替及び外国貿易法（外為法）」、金融機関等に対する各種業法、及びこれらに関する法令・ガイドラインを遵守し、これに反するいかなる行為も行わないことを約するものとします 。</li>
+                </ol>
+
+                <h3 class="text-xl font-black text-navy mt-12 mb-6 border-l-4 border-brand-green pl-4">Ⅶ. 契約の終了事由と契約終了時の措置</h3>
+                <ol class="list-decimal list-outside ml-8 space-y-4 text-slate-600 font-medium">
+                    <li>お客様が解約を希望する場合、有効期間終了前月の25日（当日が営業日でない場合は前営業日）までに当社所定の方法で申し入れるものとします。</li>
+                    <li>当社は、お客様が次の各号のいずれか一つにでも該当したときは、お客様に何らの通知・催告を要せず直ちに利用契約の全部または一部を解除できます。
+                        <ul class="list-none mt-4 space-y-4 text-slate-600 font-medium">
+                            <li class="flex items-start">
+                                <span class="w-12 flex-shrink-0 text-center mr-2 font-normal">（ア）</span>
+                                <span>手形または小切手が不渡りとなったとき</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="w-12 flex-shrink-0 text-center mr-2 font-normal">（イ）</span>
+                                <span>差押え、仮差押え、仮処分もしくは競売の申し立てがあったとき、または、租税滞納処分を受けたとき</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="w-12 flex-shrink-0 text-center mr-2 font-normal">（ウ）</span>
+                                <span>破産手続開始、特定調停手続開始、会社更生手続開始もしくは民事再生手続開始、その他これらに類似する倒産手続開始の申し立てがあったとき、または清算に入ったとき</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="w-12 flex-shrink-0 text-center mr-2 font-normal">（エ）</span>
+                                <span>解散または利用契約の履行に係る事業の全部もしくは重要な一部を第三者に譲渡しようとしたとき</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="w-12 flex-shrink-0 text-center mr-2 font-normal">（オ）</span>
+                                <span>監督省庁から営業の取消・停止処分等を受けたとき、または転廃業しようとしたときであって、利用契約を履行できないと合理的に見込まれるとき</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="w-12 flex-shrink-0 text-center mr-2 font-normal">（カ）</span>
+                                <span>利用契約に基づくお客様の債務が履行されず、お客様へ相当の期間を定めて催告したにもかかわらず、なおその期間内に履行されないとき</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="w-12 flex-shrink-0 text-center mr-2 font-normal">（キ）</span>
+                                <span>本規約第Ⅳ項に定めるお客様の禁止事項に違反したとき</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="w-12 flex-shrink-0 text-center mr-2 font-normal">（ク）</span>
+                                <span>マネー・ローンダリング、テロ資金供与、または拡散金融に利用され、またはその疑いがあると当社が合理的に判断したとき</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="w-12 flex-shrink-0 text-center mr-2 font-normal">（ケ）</span>
+                                <span>その他前各号に準ずるような利用契約を継続し難い重大な事由が発生したとき</span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>当社は、前項に基づき利用契約を解除することでお客様に生じた損害を賠償する責任を負いません。</li>
+                    <li>お客様は、本条第2項各号のいずれかに該当したときは、当然に期限の利益を失い、当社に対して負担する一切の金銭債務を直ちに弁済します。</li>
+                    <li>利用契約が終了したときは、お客様は直ちに本サービスの利用を停止するものとします。お客様は、契約終了後も継続して自身の資産を管理する場合、自己の責任において終了日までに「秘密鍵」をエクスポートし、適切に保管・管理しなければなりません。なお、本サービスの特性上、当社はお客様の資産（JPYC等）を管理・操作する権限を有しておらず、契約の継続期間中及び終了後を問わず、ウォレット内の資産の保管、返還、および損失に関する一切の責任を負わず、データの復元等にも応じません。</li>
+                </ol>
+
+                <h3 class="text-xl font-black text-navy mt-12 mb-6 border-l-4 border-brand-green pl-4">Ⅷ. 秘密情報の取り扱い</h3>
+                <ol class="list-decimal list-outside ml-8 space-y-4 text-slate-600 font-medium">
+                    <li>お客様は、本サービスに関し当社から口頭、書面その他の記録媒体等により提供もしくは開示されたかまたは知り得た、当社の技術、営業、業務、財務、組織、その他の情報(以下総称して｢秘密情報｣といいます)を善良な管理者の注意をもって管理し、事前の当社の書面による同意がない限り、他に漏洩し、または開示してはいけません。但し以下の情報は秘密情報から除外されます。</li>
+                        <ul class="list-none mt-4 space-y-4 text-slate-600 font-medium">
+                            <li class="flex items-start">
+                                <span class="w-12 flex-shrink-0 text-center mr-2 font-normal">（ア）</span>
+                                <span>当社から提供もしくは開示がなされたとき、または知得したときに、既に一般に公知となっていた、または、既に知得していたもの</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="w-12 flex-shrink-0 text-center mr-2 font-normal">（イ）</span>
+                                <span>当社から提供もしくは開示がなされた後、または知得した後、自己の責に帰せざる事由により刊行物その他により公知となったもの</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="w-12 flex-shrink-0 text-center mr-2 font-normal">（ウ）</span>
+                                <span>提供または開示の権限のある第三者から秘密保持義務を負わされることなく適法に取得したもの</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="w-12 flex-shrink-0 text-center mr-2 font-normal">（エ）</span>
+                                <span>秘密情報によることなく単独で開発したもの</span>
+                            </li>
+                        </ul>
+                    <li>お客様は、法令上の強制力を伴う開示請求が公的機関よりなされた場合は、その請求に応じる限りにおいて、当社への速やかな通知を行うことを条件に秘密情報を開示することができます。</li>
+                    <li>お客様は秘密情報を本サービスを利用する目的以外の目的をもって使用することはできません。</li>
+                    <li>お客様は、利用契約の終了時または当社から求められた場合にはいつでも、遅滞なく、当社の指示に従い、秘密情報ならびに秘密情報を記載または包含した書面その他の記録媒体およびその全ての複製物を返却または廃棄します。</li>
+                </ol>
+
+                <h3 class="text-xl font-black text-navy mt-12 mb-6 border-l-4 border-brand-green pl-4">Ⅸ. サポート</h3>
+                <ol class="list-decimal list-outside ml-8 space-y-4 text-slate-600 font-medium">
+                    <p class="mb-4">本サービスに関するサポートについては、別途定める「JPYC Gateway サポート・サービス規約」に従って提供されるものとします。</p>
+                </ol>
+
+                <h3 class="text-xl font-black text-navy mt-12 mb-6 border-l-4 border-brand-green pl-4">Ⅹ. フィードバック</h3>
+                <ol class="list-decimal list-outside ml-8 space-y-4 text-slate-600 font-medium">
+                    <p class="mb-4">お客様が当社に提供した改善提案（フィードバック）について、当社はこれを無償かつ自由に利用できるものとし、当該改善に関する権利は当社に独占的に帰属するものとします。</p>
+                </ol>
+
+                <p class="text-right text-slate-600 font-bold mt-12 mb-20">以上</p>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-navy pt-24 pb-12 text-white/90 border-t border-white/10">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row justify-between gap-20 mb-20">
+                <div class="max-w-xs">
+                    <div class="flex items-center">
+                         <a href="#">
+                             <img src="img/logo_white.svg" alt="JPYC Gateway" class="h-12 md:h-16 w-auto">
+                        </a>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-12">
+                    <div class="space-y-4">
+                        <p class="font-black text-white text-xs tracking-widest">PRODUCT</p>
+                        <ul class="space-y-3 text-sm font-bold text-slate-400">
+                            <li><a href="#" class="hover:text-brand-green transition">機能一覧</a></li>
+                            <li><a href="#" class="hover:text-brand-green transition">連携システム</a></li>
+                            <li><a href="#" class="hover:text-brand-green transition">JPYCについて</a></li>
+                        </ul>
+                    </div>
+                    <div class="space-y-4">
+                        <p class="font-black text-white text-xs tracking-widest">RESOURCES</p>
+                        <ul class="space-y-3 text-sm font-bold text-slate-400">
+                            <li><a href="#" class="hover:text-brand-green transition">導入事例</a></li>
+                            <li><a href="#" class="hover:text-brand-green transition">ブログ</a></li>
+                            <li><a href="#" class="hover:text-brand-green transition">ホワイトペーパー</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row justify-between items-center text-[10px] font-bold text-slate-500 gap-4 pt-8 border-t border-white/5">
+                <p>&copy; 1998-2026 Asteria Corporation. All Rights reserved.</p>
+                <div class="flex gap-8">
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="hover:text-white transition">利用規約</a>
+                    <a href="https://www.asteria.com/jp/privacy/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition">プライバシーポリシー</a>
+                    <a href="https://jp.asteria.com/company/profile/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition">会社概要</a>
+                    <a href="https://www.asteria.com/jp/terms/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition">アステリア製品共通利用規約</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
