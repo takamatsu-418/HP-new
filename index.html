@@ -64,7 +64,7 @@
                         <img src="img/logo.png" alt="JPYC Gateway" class="h-8 md:h-10 w-auto">
                     </a>
                 </div>
-                <nav class="hidden xl:flex items-center gap-8 text-[15px] font-bold text-navy">
+                <nav class="hidden lg:flex items-center gap-4 xl:gap-8 text-sm xl:text-[15px] font-bold text-navy">
                     <a href="#features" class="hover:text-brand-green transition">機能</a>
                     <a href="#case" class="hover:text-brand-green transition">導入事例</a>
                     <a href="#pricing" class="hover:text-brand-green transition">料金</a>
@@ -219,7 +219,7 @@
                 <div>
                     <span class="text-brand-green font-black text-sm tracking-widest uppercase mb-4 block">01 / Automatic</span>
                     <h3 class="text-4xl font-black text-navy mb-8 leading-tight">
-                        ガス代不要。JPYCだけで<br>すべての送金が完結。
+                        ガス代不要。<br>JPYCだけですべての送金が完結。
                     </h3>
                     <p class="text-lg text-slate-500 font-medium leading-relaxed mb-8">
                         ブロックチェーン決済で最大の障壁となる「ガス代（ETH等）」の準備はGatewayが代行。
@@ -585,6 +585,142 @@
                 }
                 </script>
             </div>
+        </div>
+    </section>
+
+    <section id="integration" class="py-40 bg-navy text-white relative overflow-hidden">
+        <div class="absolute top-[40%] right-[30%] w-[600px] h-[400px] bg-sky-500/10 rounded-full blur-[120px] pointer-events-none"></div>
+
+        <div class="container mx-auto px-6 max-w-6xl relative z-10">
+            
+            <div class="text-center mb-24">
+                <span class="inline-block py-1 px-4 rounded-full bg-white/10 text-sky-400 text-sm font-black mb-6 tracking-widest uppercase">System integration</span>
+                <h2 class="text-4xl lg:text-6xl font-black text-white mb-6 tracking-tighter">システム連携で業務自動化を実現</h2>
+                <p class="text-slate-300 font-bold text-lg max-w-2xl mx-auto leading-relaxed">JPYC Gatewayは、外部システム連携にも対応しています。<br>自社環境に合わせた方法で業務自動化を実現いただけます。</p>
+            </div>
+            
+            <div class="mb-32">
+                <div class="grid grid-cols-1 lg:grid-cols-11 gap-4 items-center relative">
+                    <div class="lg:col-span-3 bg-slate-900/60 rounded-3xl p-6 border border-white/5 text-center h-64 flex flex-col justify-center">
+                        <span class="text-slate-500 text-[10px] font-black tracking-widest block mb-4 uppercase">1. INCOMING JPYC</span>
+                        <div class="p-4 bg-white/5 rounded-2xl border border-white/10 flex items-center gap-4 justify-center">
+                            <i class="fas fa-coins text-brand-green text-2xl"></i>
+                            <div class="text-left">
+                                <span class="text-xs font-black text-white block">リアルタイム入金</span>
+                                <span class="text-[10px] text-slate-400 font-bold block">Polygon / Avalanche</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-1 flex justify-center items-center h-8 lg:h-full text-brand-green/30 text-xl">
+                        <i class="fas fa-chevron-right lg:rotate-0 rotate-90"></i>
+                    </div>
+
+                    <div class="lg:col-span-3 bg-white/5 rounded-[2rem] p-8 border border-white/10 text-center h-64 flex flex-col justify-center relative overflow-hidden group">
+                        <div class="relative z-10">
+                            <span class="text-slate-500 text-[10px] font-black tracking-widest block mb-1">2. PLATFORM</span>
+                            <h3 class="text-2xl font-black text-white tracking-tighter mb-6">JPYC Gateway</h3>
+                            
+                            <div class="bg-gradient-to-r from-brand-green/20 to-sky-500/20 border-2 border-sky-400 rounded-xl p-3 text-center shadow-[0_0_30px_rgba(56,189,248,0.2)]">
+                                <span class="text-[10px] font-black text-sky-300 block tracking-widest uppercase mb-0.5"><i class="fas fa-plug mr-1"></i>標準装備</span>
+                                <span class="text-sm font-black text-white">API / CSV</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="lg:col-span-1 flex justify-center items-center h-12 lg:h-full relative">
+                        <div class="hidden lg:block w-full h-1.5 bg-white/5 rounded-full overflow-hidden">
+                            <div class="h-full w-1/2 bg-gradient-to-r from-transparent to-sky-400 origin-left" style="animation: slide-flow 1.2s infinite;"></div>
+                        </div>
+                        <i class="fas fa-chevron-right text-sky-400 text-2xl lg:hidden animate-pulse"></i>
+                    </div>
+                    <div class="lg:col-span-3 bg-gradient-to-b from-sky-500/10 to-transparent rounded-3xl p-6 border-2 border-sky-500/40 shadow-[0_0_50px_rgba(56,189,248,0.15)] text-center h-64 flex flex-col justify-center">
+                        <span class="text-sky-400 text-[10px] font-black tracking-widest block mb-4 uppercase">3. 連携による業務自動化</span>
+                        <div class="grid grid-cols-2 gap-2 text-left">
+                            <div class="p-2.5 bg-slate-900/90 rounded-lg border border-sky-500/20">
+                                <span class="text-[10px] font-black text-white block">自動消込</span>
+                                <span class="text-[9px] text-brand-green font-bold flex items-center gap-1 mt-0.5"><i class="fas fa-bolt"></i>即時突合</span>
+                            </div>
+                            <div class="p-2.5 bg-slate-900/90 rounded-lg border border-sky-500/20">
+                                <span class="text-[10px] font-black text-white block">ERP / 基幹システム</span>
+                                <span class="text-[9px] text-slate-400 font-bold block mt-0.5">SAP / Oracle等</span>
+                            </div>
+                            <div class="p-2.5 bg-slate-900/90 rounded-lg border border-sky-500/20">
+                                <span class="text-[10px] font-black text-white block">会計ソフト</span>
+                                <span class="text-[9px] text-slate-400 font-bold block mt-0.5">データ自動同期</span>
+                            </div>
+                            <div class="p-2.5 bg-slate-900/90 rounded-lg border border-sky-500/20">
+                                <span class="text-[10px] font-black text-white block">ステータス更新</span>
+                                <span class="text-[9px] text-brand-green font-bold flex items-center gap-1 mt-0.5"><i class="fas fa-check"></i>手作業ゼロ</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <style>
+                @keyframes slide-flow {
+                    0% { transform: translateX(-100%); }
+                    100% { transform: translateX(200%); }
+                }
+            </style>
+            <div class="text-center mb-12">
+                <span class="text-xs font-black text-brand-green tracking-widest uppercase block mb-2">CHOOSE YOUR APPROACH</span>
+                <p class="text-xl font-bold text-slate-300">貴社のシステム環境に合わせた3つの接続方法</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div class="bg-white/5 backdrop-blur-md rounded-3xl p-8 border border-white/10 card-shadow flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-white/10 text-slate-200 flex items-center justify-center text-2xl mb-6 shadow-inner">
+                            <i class="fas fa-file-csv"></i>
+                        </div>
+                        <span class="text-xs font-black text-slate-400 tracking-wider block mb-1">Manual Import</span>
+                        <h3 class="text-2xl font-black text-white mb-4">CSVダウンロード</h3>
+                        <p class="text-slate-300 text-sm font-bold leading-relaxed">
+                            Gatewayの連携口（API）を使わずに、手動で取引履歴をCSV出力。既存の会計ソフトや管理台帳へ手軽にインポートして突合を行いたい方向けの、最もシンプルな方法です。
+                        </p>
+                    </div>
+                    <div class="mt-8 pt-4 border-t border-white/10 text-xs font-bold text-slate-400">
+                        <span class="text-[11px] font-black group-hover:translate-x-1 transition-transform">詳細を見る <i class="fas fa-chevron-right text-[9px]"></i></span>
+                    </div>
+                </div>
+
+                <div class="bg-white/5 backdrop-blur-md rounded-3xl p-8 border border-white/10 card-shadow flex flex-col justify-between relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-sky-500/5 rounded-full blur-2xl -mr-16 -mt-16"></div>
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-sky-500/20 text-sky-400 flex items-center justify-center text-2xl mb-6 shadow-inner">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <span class="text-xs font-black text-sky-400 tracking-wider block mb-1">Direct Connection</span>
+                        <h3 class="text-2xl font-black text-white mb-4">REST API</h3>
+                        <p class="text-slate-300 text-sm font-bold leading-relaxed">
+                            Gatewayが提供する連携口へ、貴社の自社システムを直接プログラミングして接続。リアルタイムな入金検知に基づいた、独自の高度な自動化を構築できます。
+                        </p>
+                    </div>
+                    <div class="mt-8 pt-4 border-t border-white/10 text-xs font-bold text-slate-400">
+                        <span class="text-[11px] font-black group-hover:translate-x-1 transition-transform">詳細を見る <i class="fas fa-chevron-right text-[9px]"></i></span>
+                    </div>
+                </div>
+
+                <a href="https://www.asteria.com/jp/warp/" target="_blank" rel="noopener noreferrer" class="bg-white/5 backdrop-blur-md rounded-3xl p-8 border border-white/10 card-shadow hover:border-brand-green transition-all flex flex-col justify-between relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-brand-green/5 rounded-full blur-2xl -mr-16 -mt-16 transition-all group-hover:bg-brand-green/10"></div>
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-brand-green/20 text-brand-green flex items-center justify-center text-2xl mb-6 shadow-inner">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <span class="text-xs font-black text-brand-green tracking-wider block mb-1">No-Code Integration</span>
+                        <h3 class="text-2xl font-black text-white mb-4 flex items-center gap-2">
+                            <span>ASTERIA Warp 連携</span>
+                            <i class="fas fa-external-link-alt text-xs opacity-50 group-hover:opacity-100 transition-opacity"></i>
+                        </h3>
+                        <p class="text-slate-300 text-sm font-bold leading-relaxed">専用のアダプターで100種類以上のシステムとの連携をノーコードで実現できます。高度なシステムの専門知識が無くとも業務の自動化を構築できます。</p>
+                    </div>
+                    <div class="mt-8 pt-4 border-t border-white/10 text-xs font-bold text-brand-green flex items-center justify-between">
+                        <span class="text-[11px] font-black group-hover:translate-x-1 transition-transform">詳細を見る <i class="fas fa-chevron-right text-[9px]"></i></span>
+                    </div>
+                </a>
+            </div>
+
         </div>
     </section>
     

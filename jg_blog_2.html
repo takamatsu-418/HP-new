@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ja" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ステーブルコインとは？ビジネス導入前に知っておきたい基礎知識と活用法 | JPYC Gateway ブログ</title>
+    <link rel="icon" href="img/logo_noname.png" type="image/png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            green: '#00bb59',
+                            blue: '#0067ff',
+                        },
+                        navy: '#0F172A',
+                    },
+                    fontFamily: {
+                        sans: ['"Inter"', '"Noto Sans JP"', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body { font-family: "Inter", "Noto Sans JP", sans-serif; color: #1E293B; background-color: #F8FAFC; }
+        .text-gradient {
+            background: linear-gradient(135deg, #00bb59 0%, #0067ff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .card-shadow {
+            box-shadow: 0 10px 30px rgba(0,0,0,0.02);
+            transition: all 0.3s ease;
+        }
+        .card-shadow:hover { transform: translateY(-3px); box-shadow: 0 15px 35px rgba(0,0,0,0.06); }
+        
+        /* 💡 ここから下の文字サイズを一回り大きく調整しました */
+        .blog-content h1 { font-size: 2rem; font-weight: 900 !important; color: #0F172A; line-height: 1.3; margin-bottom: 2rem; }
+        @media (min-width: 768px) {
+            .blog-content h1 { font-size: 3rem; } /* 👈 PC環境でガツンと大きく（48px相当） */
+        }
+
+        .blog-content h2 { font-size: 1.85rem; font-weight: 900 !important; color: #0F172A; border-left: 5px solid #00bb59; padding-left: 1.25rem; margin-top: 3.5rem; margin-bottom: 1.75rem; line-height: 1.3; }
+        .blog-content h3 { font-size: 1.45rem; font-weight: 900 !important; color: #0F172A; margin-top: 2.5rem; margin-bottom: 1.25rem; line-height: 1.4; display: flex; align-items: center; gap: 0.5rem; }
+        .blog-content p { font-size: 1.05rem; line-height: 1.9; margin-bottom: 1.75rem; color: #334155; font-weight: 500; }
+        .blog-content strong { font-weight: 900 !important; color: #0F172A; }
+        .blog-content ul { list-style-type: disc !important; padding-left: 1.75rem !important; margin-bottom: 2.25rem; }
+        .blog-content li { font-size: 1.05rem; font-weight: 700; color: #334155; margin-bottom: 0.85rem; line-height: 1.75; }
+    </style>
+</head>
+
+<body class="antialiased">
+
+    <header class="fixed w-full z-50 bg-white border-b border-slate-100">
+        <div class="max-w-[1400px] mx-auto px-6 md:px-8 h-24 flex items-center justify-between">
+            <div class="flex items-center gap-10">
+                <div class="flex items-center">
+                    <a href="index.html">
+                        <img src="img/logo.png" alt="JPYC Gateway" class="h-8 md:h-10 w-auto">
+                    </a>
+                </div>
+                <nav class="hidden lg:flex items-center gap-4 xl:gap-8 text-sm xl:text-[15px] font-bold text-navy">
+                    <a href="index.html#features" class="hover:text-brand-green transition">機能</a>
+                    <a href="index.html#case" class="hover:text-brand-green transition">導入事例</a>
+                    <a href="index.html#pricing" class="hover:text-brand-green transition">料金</a>
+                    <a href="#" class="text-brand-green transition">ブログ</a>
+                    <a href="index.html#faq" class="hover:text-brand-green transition">FAQ</a>
+                </nav>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="#" class="hidden md:block text-sm font-bold text-navy px-6">ログイン</a>
+                <a href="https://www.asteria.com/jp/contact/entry/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-10 py-4 bg-gradient-to-r from-brand-green to-[#2BC068] text-white rounded-full text-sm font-bold tracking-[0.1em] shadow-[0_10px_20px_-10px_rgba(36,175,88,0.4)] hover:shadow-[0_15px_30px_-10px_rgba(36,175,88,0.6)] hover:-translate-y-1 active:scale-95 transition-all duration-500 group"><span class="relative">お問合せ</span><i class="fas fa-arrow-right ml-3 text-xs transition-transform duration-300 group-hover:translate-x-1"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <div class="pt-[88px] bg-white">
+        <div class="bg-[#f8fafc] border-b border-slate-100">
+            <div class="mx-auto px-6 md:px-8 max-w-[1400px] py-3">
+                <nav class="flex items-center text-[11px] font-medium text-slate-400 gap-2">
+                    <a href="index.html" class="hover:text-brand-green transition-colors">TOP</a>
+                    <span class="text-slate-300 font-normal">&gt;</span>
+                    <a href="#" class="hover:text-brand-green transition-colors">公式ブログ</a>
+                    <span class="text-slate-300 font-normal">&gt;</span>
+                    <span class="text-slate-600 font-normal truncate">ステーブルコインとは？</span>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div class="mx-auto px-6 md:px-8 max-w-[1400px] py-10">
+        <div class="grid lg:grid-cols-7 gap-12 xl:gap-16 items-start">
+            
+            <main class="lg:col-span-5 max-w-[960px] w-full justify-self-stretch">
+                <article class="bg-white rounded-3xl p-6 md:p-12 border border-slate-200/60 shadow-sm">
+                    
+                    <div class="flex items-center gap-3 text-xs font-bold text-slate-400 mb-6">
+                        <time datetime="2026-05-19"><i class="far fa-calendar mr-1"></i>2026.05.19</time>
+                        <span class="bg-emerald-50 text-brand-green px-3 py-1 rounded-full">決済DX</span>
+                        <span class="bg-blue-50 text-brand-blue px-3 py-1 rounded-full">ステーブルコイン</span>
+                    </div>
+
+                    <div class="blog-content">
+                        <h1><strong>ステーブルコインとは？ビジネス導入前に知っておきたい基礎知識と活用法</strong></h1>
+
+                        <div class="text-slate-600 bg-slate-50 p-6 rounded-2xl border border-slate-100 mb-8 font-medium">
+                            <p class="m-0">「ステーブルコイン＝暗号資産（仮想通貨）」と思っていませんか？</p>
+                            <p class="m-0 mt-4">実は、2023年の法改正以降、日本国内において決済に利用されるステーブルコインは、ビットコインなどの暗号資産とは異なる「電子決済手段」として定義されています。</p>
+                            <p class="m-0 mt-4">価格変動が激しい暗号資産とは違い、価値が安定しているステーブルコインは、今や企業の「新しい支払い手段」として現実的な選択肢となっています。この記事では、主要なコインの特徴と、企業が安全に導入するためのポイントを解説します。</p>
+                        </div>
+
+                        <div class="bg-white border border-slate-200 rounded-2xl p-6 md:p-8 mb-10 shadow-sm">
+                            <p class="font-black text-navy m-0 mb-4 text-base md:text-lg flex items-center justify-center gap-2" style="font-weight: 900 !important;">
+                                <span>目次</span>
+                            </p>
+                            <ul class="list-none p-0 m-0 space-y-3.5 text-sm md:text-base font-bold">
+                                <li class="m-0 flex items-baseline gap-2">
+                                    <span class="text-brand-green font-mono text-xs md:text-sm">01.</span>
+                                    <a href="#section1" class="text-slate-600 hover:text-brand-green hover:underline transition">ステーブルコインとは？：デジタル経済を支える「価値の安定」した基盤</a>
+                                </li>
+                                <li class="m-0 flex items-baseline gap-2 border-t border-slate-100 pt-3.5">
+                                    <span class="text-brand-green font-mono text-xs md:text-sm">02.</span>
+                                    <a href="#section2" class="text-slate-600 hover:text-brand-green hover:underline transition">企業が導入する際の「管理」と「ガバナンス」</a>
+                                </li>
+                                <li class="m-0 flex items-baseline gap-2 border-t border-slate-100 pt-3.5">
+                                    <span class="text-brand-green font-mono text-xs md:text-sm">03.</span>
+                                    <a href="#section3" class="text-slate-600 hover:text-brand-green hover:underline transition">導入をサポートする「JPYC Gateway」の役割</a>
+                                </li>
+                                <li class="m-0 flex items-baseline gap-2 border-t border-slate-100 pt-3.5">
+                                    <span class="text-brand-green font-mono text-xs md:text-sm">04.</span>
+                                    <a href="#section-summary" class="text-slate-600 hover:text-brand-green hover:underline transition">まとめ：デジタル通貨をビジネスの標準へ</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <h2 id="section1" class="scroll-mt-28">1. ステーブルコインとは？：デジタル経済を支える「価値の安定」した基盤</h2>
+                        <p>ステーブルコインとは、米ドルや日本円などの法定通貨と価値が1:1で連動（ペグ）するように設計されたデジタル通貨です。</p>
+                        <p>ビットコインに代表される暗号資産は、需給によって価格が激しく変動（ボラティリティ）するため、商取引の「支払い」や「受取」には適しませんでした。この価格変動リスクを排除し、ブロックチェーンの利点である「即時性・低コスト」を実務に持ち込んだのがステーブルコインです。</p>
+
+                        <h3>① 価値を一定に保つための「裏付け資産」の仕組み</h3>
+                        <p>なぜステーブルコインは「1枚＝1円」を維持できるのでしょうか。その信頼性の根拠は、発行体がコインの総発行額と同等以上の資産を「準備金」として保有する仕組みにあります。</p>
+                        <p>現在、世界で主流となっているUSDT（テザー）やUSDC（USDコイン）は、この「法定通貨担保型」を採用しています。発行体が銀行口座に米ドル現金や短期国債を預け、それを裏付けにデジタルコインを発行します。ユーザーが払い戻し（償還）を求めた際、発行体がいつでも現金で返せる資産を確保していることが、価値の安定を担保しています。</p>
+                        <ul>
+                            <li>
+                                <span class="text-brand-green">USDT (Tether)</span>
+                                <p style="padding-left: 1em; margin: 4px 0 0 0;">世界最大の流通量を誇り、海外企業とのクロスボーダー決済においてデファクトスタンダードとなっています。</p>
+                            </li>
+                            <li>
+                                <span class="text-brand-green">USDC (USD Coin)</span>
+                                <p>米国法に基づき厳格な監査を受けており、透明性を重視する法人のドル建て決済に選ばれる傾向があります。</p>
+                            </li>
+                        </ul>
+
+                        <h3>② 日本における法的定義：「電子決済手段」への昇格とJPYCの役割</h3>
+                        <p>2023年6月の改正資金決済法により、日本は世界に先駆けてステーブルコインの法的枠組みを整備しました。ここで極めて重要なのは、ステーブルコインがビットコインのような「暗号資産」とは法的に完全に切り離され、「電子決済手段」として定義された点です。</p>
+                        <p>日本円ステーブルコインの先駆者であるJPYCも、この法改正を経て「電子決済手段」としての地位を確立しました。かつては「前払式支払手段」の側面が強かったものの、現在は「資金移動業者」のライセンスに基づき、銀行等と同じ「電子決済手段」として発行されています。</p>
+                        <p>これにより、1 JPYC＝1円での日本円償還（払い戻し）が法的に認められ、企業は「預金」と同等の安心感を持って、経費精算やB2Bの少額決済などの国内実務に導入できるようになったのです。</p>
+
+                        <h3>③ 既存の決済手段との比較：なぜステーブルコインなのか</h3>
+                        <p>ビジネス導入を検討する上で、既存の決済手段との違いを理解することは不可欠です。</p>
+                        <div class="overflow-x-auto my-6 shadow-sm rounded-xl">
+                            <table class="w-full text-center border border-slate-300 border-collapse text-base text-slate-800">
+                                <thead>
+                                    <tr class="bg-slate-100 border-b-2 border-slate-400 text-slate-900 font-bold">
+                                        <th class="p-4 border-r border-slate-300 w-1/4">比較項目</th>
+                                        <th class="p-4 border-r border-slate-300 w-1/4">電子マネー（Pay等）</th>
+                                        <th class="p-4 border-r border-emerald-300 bg-emerald-50 text-brand-green w-1/4">ステーブルコイン（JPYC等）</th>
+                                        <th class="p-4 w-1/4">暗号資産（BTC等）</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-slate-200">
+                                    <tr class="border-b border-slate-200">
+                                        <td class="p-4 font-bold border-r border-slate-300 bg-slate-50 text-slate-700">法的区分</td>
+                                        <td class="p-4 border-r border-slate-200 bg-white">前払式支払手段等</td>
+                                        <td class="p-4 font-bold border-r border-emerald-200 bg-emerald-50/40 text-slate-900">電子決済手段</td>
+                                        <td class="p-4 bg-white">暗号資産</td>
+                                    </tr>
+                                    <tr class="border-b border-slate-200">
+                                        <td class="p-4 font-bold border-r border-slate-300 bg-slate-50 text-slate-700">送金範囲</td>
+                                        <td class="p-4 border-r border-slate-200 bg-white">特定アプリ内に限定</td>
+                                        <td class="p-4 font-bold border-r border-emerald-200 bg-emerald-50/40 text-slate-900">世界中・全ネットワーク</td>
+                                        <td class="p-4 bg-white">世界中・全ネットワーク</td>
+                                    </tr>
+                                    <tr class="border-b border-slate-200">
+                                        <td class="p-4 font-bold border-r border-slate-300 bg-slate-50 text-slate-700">プログラム性</td>
+                                        <td class="p-4 border-r border-slate-200 bg-white">不可（仕様に依存）</td>
+                                        <td class="p-4 font-bold border-r border-emerald-200 bg-emerald-50/40 text-slate-900">可能（自動実行）</td>
+                                        <td class="p-4 bg-white">可能（自動実行）</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-4 font-bold border-r border-slate-300 bg-slate-50 text-slate-700">価値の裏付け</td>
+                                        <td class="p-4 border-r border-slate-200 bg-white">発行体による保証</td>
+                                        <td class="p-4 font-bold border-r border-emerald-200 bg-emerald-50/40 text-slate-900">法定通貨による全額担保</td>
+                                        <td class="p-4 bg-white">なし（需給のみ）</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p>ステーブルコインは、電子マネーの「価値の安定」と、暗号資産の「境界なき送金・プログラム制御」を融合させた、「法人決済に最適化されたデジタルな円」と言えます。法整備が完了した2026年の今、USDT/USDCによる外貨決済や、JPYCによる国内決済DXを戦略的に活用できるかどうかが、企業の資金効率を左右する決定的な要因となります。</p>
+
+                        <hr class="border-t-2 border-slate-200 my-8">
+                        <h2 id="section2" class="scroll-mt-28 mt-0">2. 企業が導入する際の「管理」と「ガバナンス」</h2>                        
+                        <p>ステーブルコインをビジネスに導入する際、企業が最も慎重に検討すべきは「どのように安全に管理するか」という点です。個人向けのウォレット（Metamask等）では、法人が求める高度なガバナンスを維持するのは困難です。</p>
+                        <ul>
+                            <li>
+                                <span class="text-brand-green">秘密鍵の組織管理</span>
+                                <p style="padding-left: 1em; margin: 4px 0 0 0;">担当者一人に管理を依存させず、組織として安全に資産を保持する仕組み。</p>
+                            </li>
+                            <li>
+                                <span class="text-brand-green">既存会計との整合性</span>
+                                <p style="padding-left: 1em; margin: 4px 0 0 0;">ブロックチェーン上の決済データを、いかにスムーズに会計ソフトへ連携させるか。</p>
+                            </li>
+                            <li>
+                                <span class="text-brand-green">操作の標準化</span>
+                                <p style="padding-left: 1em; margin: 4px 0 0 0;">専門知識がないスタッフでも、銀行のネットバンキングのようにミスなく操作できる環境。</p>
+                            </li>
+                        </ul>
+
+                    <section class="mb-16">
+                        <hr class="border-t-2 border-slate-200 my-8">
+                        <h2 id="section3" class="scroll-mt-28 text-2xl md:text-3xl font-black text-navy mt-14 mb-6 border-l-4 border-brand-green pl-4 leading-tight">3. 導入をサポートする「JPYC Gateway」の役割</h2>
+                        <p class="text-base text-slate-600 leading-relaxed mb-6">これらの「法人特有の管理課題」を解決するために開発されたのが、アステリアの「JPYC Gateway」です。<br>JPYC Gatewayは、ステーブルコイン（特にJPYC）の入出金を容易にする企業向けプラットフォームです。</p>
+                        <ul>
+                            <li>
+                                <span class="text-brand-green">銀行並みの操作感</span>
+                                <p style="padding-left: 1em; margin: 4px 0 0 0;">難しい技術を意識せず、Web画面上で安全に送金・管理が可能。</p>
+                            </li>
+                            <li>
+                                <span class="text-brand-green">ノーコード連携</span>
+                                <p style="padding-left: 1em; margin: 4px 0 0 0;">データ連携ツール「ASTERIA Warp」の技術を活かし、既存の会計システム等と自動でデータを同期。</p>
+                            </li>
+                        </ul>
+                        <p>「ステーブルコインを検討したいが、社内の管理体制に不安がある」という企業にとって、JPYC Gatewayは法規制を遵守しながら効率的に運用を開始するための「架け橋」となります。</p>
+
+                    </section>
+                        <hr class="border-t-2 border-slate-200 my-8">
+                        <h2 id="section-summary" class="scroll-mt-28">まとめ：デジタル通貨をビジネスの標準へ</h2>
+                        <p>ステーブルコインは、送金コストの削減や24時間365日の即時決済など、企業の財務・経理に大きな変革をもたらします。自社の目的に合った銘柄を選び、それを支える安全な管理基盤（JPYC Gatewayなど）を整えること。これが、2026年のデジタル経済において競争力を高めるための第一歩となります。</p>
+                    </div>
+
+                    <div class="mt-12 pt-6 border-t border-slate-100 flex items-center justify-between">
+                        <span class="text-xs font-black text-slate-400 uppercase tracking-wider">Share this article</span>
+                        <div class="flex gap-3">
+                            <a href="#" class="w-10 h-10 rounded-full bg-slate-100 hover:bg-navy hover:text-white flex items-center justify-center text-slate-500 transition"><i class="fab fa-x-twitter"></i></a>
+                            <a href="#" class="w-10 h-10 rounded-full bg-slate-100 hover:bg-brand-blue hover:text-white flex items-center justify-center text-slate-500 transition"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="w-10 h-10 rounded-full bg-slate-100 hover:bg-emerald-600 hover:text-white flex items-center justify-center text-slate-500 transition"><i class="fab fa-line"></i></a>
+                        </div>
+                    </div>
+                </article>
+            </main>
+
+            <aside class="space-y-8 sticky top-28 lg:col-span-2">
+                
+                <div class="bg-navy text-white rounded-3xl p-8 relative overflow-hidden shadow-xl">
+                    <div class="absolute -right-6 -bottom-6 text-8xl font-black text-white/[0.03] select-none pointer-events-none">DX</div>
+                    <span class="text-brand-green font-black text-[10px] tracking-widest uppercase block mb-2">Next Gen Wallet</span>
+                    <h3 class="text-white text-xl font-black mb-4 m-0">JPYC Gateway</h3>
+                    <p class="text-slate-400 text-sm font-bold leading-relaxed mb-6">
+                        煩雑な銀行振込の手間とコストをスマートに解決。日本円ステーブルコインをビジネスの強力な武器へ。
+                    </p>
+                    <a href="https://www.asteria.com/jp/contact/reqdoc/" target="_blank" rel="noopener noreferrer" class="w-full text-center bg-brand-green text-white font-black py-4 px-6 rounded-xl block text-sm shadow-lg shadow-brand-green/20 hover:scale-[1.02] transition duration-300">
+                        今すぐ資料をダウンロード
+                    </a>
+                </div>
+
+                <div class="bg-white rounded-3xl p-8 border border-slate-200/60 shadow-sm">
+                    <h3 class="text-sm font-black text-navy border-b border-slate-100 pb-4 mb-4 uppercase tracking-wider m-0">Categories</h3>
+                    <ul class="space-y-1 font-bold text-sm text-slate-600 p-0 list-none">
+                        <li><a href="#" class="flex justify-between items-center py-2 hover:text-brand-green transition"><span><i class="fas fa-chevron-right text-[10px] mr-2 text-slate-300"></i>決済DX・財務DX</span><span class="text-xs bg-slate-100 px-2.5 py-1 rounded-md text-slate-400">14</span></a></li>
+                        <li><a href="#" class="flex justify-between items-center py-2 hover:text-brand-green transition"><span><i class="fas fa-chevron-right text-[10px] mr-2 text-slate-300"></i>ステーブルコイン基礎</span><span class="text-xs bg-slate-100 px-2.5 py-1 rounded-md text-slate-400">7</span></a></li>
+                        <li><a href="#" class="flex justify-between items-center py-2 hover:text-brand-green transition"><span><i class="fas fa-chevron-right text-[10px] mr-2 text-slate-300"></i>システム連携・ASTERIA</span><span class="text-xs bg-slate-100 px-2.5 py-1 rounded-md text-slate-400">11</span></a></li>
+                        <li><a href="#" class="flex justify-between items-center py-2 hover:text-brand-green transition"><span><i class="fas fa-chevron-right text-[10px] mr-2 text-slate-300"></i>ガバナンス・セキュリティ</span><span class="text-xs bg-slate-100 px-2.5 py-1 rounded-md text-slate-400">5</span></a></li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-3xl p-8 border border-slate-200/60 shadow-sm">
+                    <h3 class="text-sm font-black text-navy border-b border-slate-100 pb-4 mb-4 uppercase tracking-wider m-0">Popular Posts</h3>
+                    <div class="space-y-4 pt-2">
+                        <a href="#" class="flex items-start gap-3 group">
+                            <span class="w-5 h-5 rounded bg-slate-100 font-mono font-black text-[11px] text-slate-400 flex items-center justify-center flex-shrink-0 group-hover:bg-brand-green group-hover:text-white transition">1</span>
+                            <p class="text-xs font-bold text-navy line-clamp-2 leading-relaxed m-0 group-hover:text-brand-green transition">国内・海外一律8円！送金手数料におけるコスト革命の本質</p>
+                        </a>
+                        <a href="#" class="flex items-start gap-3 group">
+                            <span class="w-5 h-5 rounded bg-slate-100 font-mono font-black text-[11px] text-slate-400 flex items-center justify-center flex-shrink-0 group-hover:bg-brand-green group-hover:text-white transition">2</span>
+                            <p class="text-xs font-bold text-navy line-clamp-2 leading-relaxed m-0 group-hover:text-brand-green transition">電子決済手段としての「JPYC」の安全性と法的な位置づけ</p>
+                        </a>
+                    </div>
+                </div>
+
+            </aside>
+        </div>
+    </div>
+
+    <footer class="bg-navy pt-24 pb-12 text-white/90 border-t border-white/10">
+        <div class="max-w-[1400px] mx-auto px-6 md:px-8">
+            <div class="flex flex-col lg:flex-row justify-between gap-20 mb-20">
+                <div class="max-w-xs">
+                    <div class="flex items-center">
+                         <a href="#">
+                            <img src="img/logo_white.svg" alt="JPYC Gateway" class="h-12 md:h-16 w-auto">
+                        </a>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-12">
+                    <div class="space-y-4">
+                        <p class="font-black text-white text-xs tracking-widest">PRODUCT</p>
+                        <ul class="space-y-3 text-sm font-bold text-slate-400 list-none p-0">
+                            <li><a href="index.html#features" class="hover:text-brand-green transition">機能一覧</a></li>
+                            <li><a href="index.html#integration" class="hover:text-brand-green transition">連携システム</a></li>
+                            <li><a href="#" class="hover:text-brand-green transition">JPYCについて</a></li>
+                        </ul>
+                    </div>
+                    <div class="space-y-4">
+                        <p class="font-black text-white text-xs tracking-widest">RESOURCES</p>
+                        <ul class="space-y-3 text-sm font-bold text-slate-400 list-none p-0">
+                            <li><a href="index.html#case" class="hover:text-brand-green transition">導入事例</a></li>
+                            <li><a href="#" class="hover:text-brand-green transition">ブログ</a></li>
+                            <li><a href="#" class="hover:text-brand-green transition">ホワイトペーパー</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row justify-between items-center text-[10px] font-bold text-slate-500 gap-4 pt-8 border-t border-white/5">
+                <p>&copy; 1998-2026 Asteria Corporation. All Rights reserved.</p>
+                <div class="flex gap-8">
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="hover:text-white transition">利用規約</a>
+                    <a href="https://www.asteria.com/jp/privacy/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition">プライバシーポリシー</a>
+                    <a href="https://jp.asteria.com/company/profile/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition">会社概要</a>
+                    <a href="https://www.asteria.com/jp/terms/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition">アステリア製品共通利用規約</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
