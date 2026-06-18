@@ -79,7 +79,7 @@
     </header>
 
   <div class="max-w-7xl mx-auto px-6 pt-6 text-sm text-gray-400 flex items-center space-x-2">
-    <span>ホーム</span><span>&gt;</span><span>ユースケース</span><span>&gt;</span><span class="text-gray-600">海外サプライヤーへの送金コストを最大90%以上削減したユースケース</span>
+    <span>ホーム</span><span>&gt;</span><span>ユースケース</span><span>&gt;</span><span class="text-gray-600">クレカ手数料や入金確認の手間を劇的に解消。ECサイトへのJPYC決済に対応したユースケース</span>
   </div>
 
   <main class="max-w-7xl mx-auto px-6 py-12">
@@ -88,22 +88,12 @@
     </div>
     
     <div class="grid md:grid-cols-12 gap-10 items-center">
-      <div class="md:col-span-8">
-        <h1 class="text-4xl md:text-6xl font-black text-slate-950 leading-tight">
-          海外サプライヤーへの<br>
-          送金コストを99%以上削減
-        </h1>
-        <p class="text-2xl md:text-3xl font-bold text-slate-700 mt-6">
-          中堅精密機械メーカーのユースケース
-        </p>
-        <p class="text-base md:text-xl text-gray-600 leading-relaxed mt-6 max-w-3xl">
-          海外サプライヤーからの部品・原材料の調達において、高額な手数料や着金遅延が大きな課題となっていました。JPYC Gatewayの導入により、コスト・スピード・業務効率を大幅に改善しました。
-        </p>
-      </div>
-
-        <div class="md:col-span-4 bg-white rounded-2xl border border-gray-100 flex items-center justify-center min-h-[260px] relative overflow-hidden shadow-sm p-4">
-            <img src="img/usecase/usecase_1.png" alt="日本から海外サプライヤーへのJPYC送金イメージ" class="w-full h-auto object-contain max-h-[240px]">
+        <div class="md:col-span-8">
+            <h1 class="text-4xl md:text-6xl font-black text-slate-950 leading-tight">ECの決済コストを解消。<br>JPYC決済への対応</h1>
+            <p class="text-2xl md:text-3xl font-bold text-slate-700 mt-6">自社ECサイトを保有する企業のユースケース</p>
+            <p class="text-base md:text-xl text-gray-600 leading-relaxed mt-6 max-w-3xl">自社ECサイトの運用において、売上に比例して膨らむクレジットカードの決済手数料や、入金確認にともなう出荷の遅延が大きな課題となっていました。JPYC Gatewayの導入により、決済コスト・出荷スピード・バックオフィス業務の効率を大幅に改善しました。</p>
         </div>
+        <img src="img/usecase/usecase_2.png" alt="ECサイトでのJPYC決済イメージ" class="md:col-span-4 w-full h-auto rounded-2xl border border-gray-100 shadow-sm">
     </div>
 
     <section class="mt-24">
@@ -111,41 +101,37 @@
       
       <div class="flex flex-col lg:flex-row items-center justify-between gap-4 relative">
         
+        <!-- 導入前 -->
         <div class="w-full lg:w-[47%] bg-[#f7f9fa] border border-[#eef1f2] rounded-2xl p-6 shadow-sm flex flex-col justify-between min-h-[380px]">
           <div class="bg-[#59606d] text-white text-center text-base font-bold py-3.5 px-4 rounded-xl tracking-wide mb-8">
-            導入前：銀行の海外送金（法定通貨）
+            導入前：従来のクレジットカード・銀行振込決済
           </div>
           <div class="flex items-center justify-between text-center font-bold text-[#11224d] px-2 mb-10">
+            <div class="flex flex-col items-center w-20">
+              <i class="fa-solid fa-user text-4xl text-[#59606d]/80 mb-2"></i>
+              <span class="text-xs leading-tight">購入者<br><span class="text-[11px] text-gray-500 font-normal">(ユーザー)</span></span>
+            </div>
+            <i class="fa-solid fa-arrow-right text-gray-300 text-sm"></i>
             <div class="flex flex-col items-center w-24">
-              <i class="fa-solid fa-building text-4xl text-[#59606d]/80 mb-2"></i>
-              <span class="text-xs leading-tight">株式会社B<br><span class="text-[11px] text-gray-500 font-normal">(日本)</span></span>
+              <i class="fa-solid fa-credit-card text-4xl text-[#59606d]/80 mb-2"></i>
+              <span class="text-xs leading-tight">決済代行会社<br><span class="text-[11px] text-gray-500 font-normal">(クレカ等)</span></span>
             </div>
             <i class="fa-solid fa-arrow-right text-gray-300 text-sm"></i>
-            <div class="flex flex-col items-center w-20">
-              <i class="fa-solid fa-building-columns text-4xl text-[#59606d]/80 mb-2"></i>
-              <span class="text-xs leading-tight">銀行<br><span class="text-[11px] text-gray-500 font-normal">(日本)</span></span>
-            </div>
-            <i class="fa-solid fa-arrow-right text-gray-300 text-sm"></i>
-            <div class="flex flex-col items-center w-20">
-              <i class="fa-solid fa-building-columns text-4xl text-[#59606d]/80 mb-2"></i>
-              <span class="text-xs">中継銀行</span>
-            </div>
-            <i class="fa-solid fa-arrow-right text-gray-300 text-sm"></i>
-            <div class="flex flex-col items-center w-28">
-              <i class="fa-solid fa-industry text-4xl text-[#59606d]/80 mb-2"></i>
-              <span class="text-xs">海外サプライヤー</span>
+            <div class="flex flex-col items-center w-24">
+              <i class="fa-solid fa-cart-shopping text-4xl text-[#59606d]/80 mb-2"></i>
+              <span class="text-xs leading-tight">自社ECサイト<br><span class="text-[11px] text-gray-500 font-normal">(手動での確認)</span></span>
             </div>
           </div>
           <div class="grid grid-cols-2 gap-4 mt-auto">
             <div class="bg-white p-5 rounded-2xl text-center border border-gray-100 shadow-sm flex flex-col justify-center">
-              <span class="text-sm text-gray-500 font-bold block mb-1">コスト</span>
-              <span class="text-[19px] font-black text-[#11224d] tracking-tight">4,000〜7,000円</span>
-              <span class="text-[11px] text-gray-400 block mt-1">(手数料・中継銀行手数料など)</span>
+              <span class="text-sm text-gray-500 font-bold block mb-1">決済コスト</span>
+              <span class="text-[19px] font-black text-[#11224d] tracking-tight">売上の3.0%〜4.0%</span>
+              <span class="text-[11px] text-gray-400 block mt-1">(売上が増えるほど高額に)</span>
             </div>
             <div class="bg-white p-5 rounded-2xl text-center border border-gray-100 shadow-sm flex flex-col justify-center">
-              <span class="text-sm text-gray-500 font-bold block mb-1">時間</span>
-              <span class="text-[19px] font-black text-[#11224d] tracking-tight">2〜3営業日</span>
-              <span class="text-[11px] text-gray-400 block mt-1">(銀行営業日・時差の影響あり)</span>
+              <span class="text-sm text-gray-500 font-bold block mb-1">入金確認・反映</span>
+              <span class="text-[19px] font-black text-[#11224d] tracking-tight">タイムラグあり</span>
+              <span class="text-[11px] text-gray-400 block mt-1">(手動の消込業務・出荷遅延)</span>
             </div>
           </div>
         </div>
@@ -154,14 +140,15 @@
           <i class="fa-solid fa-play"></i>
         </div>
 
+        <!-- 導入後 -->
         <div class="w-full lg:w-[47%] bg-[#f2fbf7] border border-[#d6f2e6] rounded-2xl p-6 shadow-sm flex flex-col justify-between min-h-[380px]">
           <div class="bg-[#00966c] text-white text-center text-base font-bold py-3.5 px-4 rounded-xl tracking-wide mb-8">
-            導入後：JPYC Gatewayルート
+            導入後：JPYC Gateway決済ルート
           </div>
           <div class="flex items-center justify-between text-center font-bold text-[#11224d] px-4 mb-10">
-            <div class="flex flex-col items-center w-24">
-              <i class="fa-solid fa-building text-4xl text-[#11224d]/80 mb-2"></i>
-              <span class="text-xs leading-tight">株式会社B<br><span class="text-[11px] text-gray-500 font-normal">(日本)</span></span>
+            <div class="flex flex-col items-center w-20">
+              <i class="fa-solid fa-user text-4xl text-[#11224d]/80 mb-2"></i>
+              <span class="text-xs leading-tight">購入者<br><span class="text-[11px] text-gray-500 font-normal">(JPYC支払)</span></span>
             </div>
             <i class="fa-solid fa-arrow-right text-[#00966c] text-sm"></i>
             
@@ -170,166 +157,168 @@
             </div>
             
             <i class="fa-solid fa-arrow-right text-[#00966c] text-sm"></i>
-            <div class="flex flex-col items-center w-28">
-              <i class="fa-solid fa-industry text-4xl text-[#11224d]/80 mb-2"></i>
-              <span class="text-xs leading-tight">海外サプライヤー<br>(JPYCで受取)</span>
+            <div class="flex flex-col items-center w-24">
+              <i class="fa-solid fa-laptop-code text-4xl text-[#11224d]/80 mb-2"></i>
+              <span class="text-xs leading-tight">自社ECサイト<br><span class="text-[11px] text-[#00966c] font-bold">(自動発送準備)</span></span>
             </div>
           </div>
           <div class="grid grid-cols-2 gap-4 mt-auto">
             <div class="bg-white p-5 rounded-2xl text-center border border-[#d6f2e6] shadow-sm flex flex-col justify-center">
-              <span class="text-sm text-[#00966c] font-extrabold block mb-1">コスト</span>
-              <span class="text-[21px] font-black text-[#00966c] tracking-tight">8円</span>
-              <span class="text-[11px] text-[#00966c]/80 block mt-1 leading-normal">(金額に関わらず)</span>
+              <span class="text-sm text-[#00966c] font-extrabold block mb-1">決済コスト</span>
+              <span class="text-[21px] font-black text-[#00966c] tracking-tight">0円</span>
+              <span class="text-[11px] text-[#00966c]/80 block mt-1 leading-normal">(クレカ手数料を大幅削減)</span>
             </div>
             <div class="bg-white p-5 rounded-2xl text-center border border-[#d6f2e6] shadow-sm flex flex-col justify-center">
-              <span class="text-sm text-[#00966c] font-extrabold block mb-1">時間</span>
-              <span class="text-[21px] font-black text-[#00966c] tracking-tight">数秒～数分</span>
-              <span class="text-[11px] text-[#00966c]/80 block mt-1 leading-normal">(24時間365日いつでも着金)</span>
+              <span class="text-sm text-[#00966c] font-extrabold block mb-1">入金確認・反映</span>
+              <span class="text-[21px] font-black text-[#00966c] tracking-tight">数秒（即時自動確認）</span>
+              <span class="text-[11px] text-[#00966c]/80 block mt-1 leading-normal">(24時間自動連携で即出荷へ)</span>
             </div>
           </div>
         </div>
-
       </div>
     </section>
+
     <section class="mt-24">
       <h2 class="text-3xl font-bold text-center text-slate-900 mb-12">このユースケースにおける効果</h2>
       <div class="grid md:grid-cols-3 gap-8">
+        
+        <!-- コスト削減 -->
         <div class="bg-emerald-50/40 border border-emerald-100 rounded-2xl p-8 text-center flex flex-col justify-between shadow-sm">
           <div>
             <div class="w-14 h-14 mx-auto bg-white rounded-full flex items-center justify-center border border-emerald-200 text-primary mb-5 shadow-sm text-xl">
               <i class="fa-solid fa-coins"></i>
             </div>
             <h3 class="font-bold text-lg text-primary">コスト削減</h3>
-            <p class="text-base text-slate-700 font-bold mt-4 leading-relaxed">送金手数料を<br><span class="text-2xl text-primary font-black">99%以上削減</span></p>
+            <p class="text-base text-slate-700 font-bold mt-4 leading-relaxed">高額なクレカ手数料を<br><span class="text-2xl text-primary font-black">劇的に引き下げ</span></p>
           </div>
           <div class="bg-emerald-50 border border-emerald-200 text-primary text-sm font-bold py-2 px-4 rounded-full mt-8 inline-block">
-            年間のトータルコストを大幅カット
+            売上にともなう決済手数料を大幅カット
           </div>
         </div>
+
+        <!-- スピード向上 -->
         <div class="bg-blue-50/40 border border-blue-100 rounded-2xl p-8 text-center flex flex-col justify-between shadow-sm">
           <div>
             <div class="w-14 h-14 mx-auto bg-white rounded-full flex items-center justify-center border border-blue-200 text-blue-600 mb-5 shadow-sm text-xl">
               <i class="fa-regular fa-clock"></i>
             </div>
             <h3 class="font-bold text-lg text-blue-600">スピード向上</h3>
-            <p class="text-base text-slate-700 font-bold mt-4 leading-relaxed">着金までの時間を<br><span class="text-2xl text-blue-600 font-black">2〜3営業日から数秒に短縮</span></p>
+            <p class="text-base text-slate-700 font-bold mt-4 leading-relaxed">着金までのタイムラグを<br><span class="text-2xl text-blue-600 font-black">「数秒」に短縮</span></p>
           </div>
           <div class="bg-blue-50 border border-blue-200 text-blue-600 text-sm font-bold py-2 px-4 rounded-full mt-8 inline-block">
-            リードタイムを短縮し出荷を加速
+            即時入金反映で配送プロセスを最速化
           </div>
         </div>
+
         <div class="bg-amber-50/40 border border-amber-100 rounded-2xl p-8 text-center flex flex-col justify-between shadow-sm">
           <div>
             <div class="w-14 h-14 mx-auto bg-white rounded-full flex items-center justify-center border border-amber-200 text-amber-600 mb-5 shadow-sm text-xl">
-              <i class="fa-solid fa-desktop"></i>
+              <i class="fa-solid fa-laptop-code"></i>
             </div>
             <h3 class="font-bold text-lg text-amber-600">業務効率化</h3>
-            <p class="text-base text-slate-700 font-bold mt-4 leading-relaxed">煩雑な銀行手続きから解放<br><span class="text-2xl text-amber-600 font-black">デジタルで完結</span></p>
+            <p class="text-base text-slate-700 font-bold mt-4 leading-relaxed">手動での入金消込から解放<br><span class="text-2xl text-amber-600 font-black">確認フローを完全自動化</span></p>
           </div>
           <div class="bg-amber-50 border border-amber-200 text-amber-600 text-sm font-bold py-2 px-4 rounded-full mt-8 inline-block">
-            担当者の工数とミスを削減
+            バックオフィスの工数とミスをゼロに
           </div>
         </div>
+
       </div>
     </section>
 
     <div class="grid lg:grid-cols-12 gap-8 mt-28 items-stretch">
-      <div class="lg:col-span-4 border border-gray-200 rounded-2xl p-8 bg-white flex flex-col justify-between shadow-sm">
-        <div>
-          <h3 class="font-bold text-lg border-b border-gray-100 pb-4 mb-6 text-slate-900">抱えていた課題</h3>
-          <ul class="space-y-6 text-base">
-            <li class="flex items-start">
-              <i class="fa-solid fa-circle-check text-primary mt-1 mr-3 flex-shrink-0 text-lg"></i>
-              <div>
-                <strong class="block text-slate-800 mb-1.5 font-bold">高額な国際送金手数料</strong>
-                <p class="text-gray-500 leading-relaxed text-sm">法定通貨による海外送金は、1回あたり数千円〜1万円近くの手数料がかかり、年間コストが財務を圧迫していた。</p>
-              </div>
-            </li>
-            <li class="flex items-start">
-              <i class="fa-solid fa-circle-check text-primary mt-1 mr-3 flex-shrink-0 text-lg"></i>
-              <div>
-                <strong class="block text-slate-800 mb-1.5 font-bold">着金までのタイムラグ</strong>
-                <p class="text-gray-500 leading-relaxed text-sm">銀行送金は着金までに2〜3営業日要し、出荷プロセスが遅れ、製造ラインのリードタイムに悪影響を及ぼしていた。</p>
-              </div>
-            </li>
-            <li class="flex items-start">
-              <i class="fa-solid fa-circle-check text-primary mt-1 mr-3 flex-shrink-0 text-lg"></i>
-              <div>
-                <strong class="block text-slate-800 mb-1.5 font-bold">電子決済手段の導入ハードル</strong>
-                <p class="text-gray-500 leading-relaxed text-sm">電子決済手段のメリットは理解していたが、JPYCを保有しておらず、導入方法や実務への組み込み方が分からず足踏みしていた。</p>
-              </div>
-            </li>
-          </ul>
+        <div class="lg:col-span-4 border border-gray-200 rounded-2xl p-8 bg-white flex flex-col justify-between shadow-sm">
+            <div>
+            <h3 class="font-bold text-lg border-b border-gray-100 pb-4 mb-6 text-slate-900">抱えていた課題</h3>
+            <ul class="space-y-6 text-base">
+                <li class="flex items-start">
+                <i class="fa-solid fa-circle-check text-primary mt-1 mr-3 flex-shrink-0 text-lg"></i>
+                <div>
+                    <strong class="block text-slate-800 mb-1.5 font-bold">膨らむ決済手数料</strong>
+                    <p class="text-gray-500 leading-relaxed text-sm">売上の増加に比例してクレジットカードの決済手数料（3〜4%）の負担が重くなり、サイトの利益率を圧迫していた。</p>
+                </div>
+                </li>
+                <li class="flex items-start">
+                <i class="fa-solid fa-circle-check text-primary mt-1 mr-3 flex-shrink-0 text-lg"></i>
+                <div>
+                    <strong class="block text-slate-800 mb-1.5 font-bold">入金確認の手間と出荷遅延</strong>
+                    <p class="text-gray-500 leading-relaxed text-sm">銀行振込などの目視による入金消込業務に工数がかかり、確認のタイムラグが発送の遅れやお客さまへの対応遅延に繋がっていた。</p>
+                </div>
+                </li>
+                <li class="flex items-start">
+                <i class="fa-solid fa-circle-check text-primary mt-1 mr-3 flex-shrink-0 text-lg"></i>
+                <div>
+                    <strong class="block text-slate-800 mb-1.5 font-bold">Web3決済の導入ハードル</strong>
+                    <p class="text-gray-500 leading-relaxed text-sm">ステーブルコイン決済の利点は理解しつつも、自社ECシステムへの組み込み方や、スマートコントラクトとの自動連携の方法が分からず足踏みしていた。</p>
+                </div>
+                </li>
+            </ul>
+            </div>
         </div>
-      </div>
 
-      <div class="lg:col-span-4 border border-gray-200 rounded-2xl p-8 bg-white shadow-sm">
-        <h3 class="font-bold text-lg border-b border-gray-100 pb-4 mb-6 text-slate-900">JPYC Gatewayでの解決フロー</h3>
-        <ol class="space-y-6 text-base">
-          <li class="flex items-start">
-            <span class="w-7 h-7 bg-[#00966c] text-white font-bold flex items-center justify-center rounded-full mr-3 flex-shrink-0 text-sm">1</span>
-            <div>
-              <strong class="block text-slate-800 mb-1.5 font-bold">JPYCの初回調達</strong>
-              <p class="text-gray-500 leading-relaxed text-sm">法定通貨（日本円）を用いて、必要な決済資金分のJPYCを調達し、自社のJPYC Gatewayで安全に管理・保有。</p>
-            </div>
-          </li>
-          <li class="flex items-start">
-            <span class="w-7 h-7 bg-[#00966c] text-white font-bold flex items-center justify-center rounded-full mr-3 flex-shrink-0 text-sm">2</span>
-            <div>
-              <strong class="block text-slate-800 mb-1.5 font-bold">JPYC Gatewayでの決済実行</strong>
-              <p class="text-gray-500 leading-relaxed text-sm">担当者がJPYC Gatewayで自社が保有するJPYCの残高を確認。送金先を確認し、「送金」ボタンをクリック。</p>               
-            </div>
-          </li>
-          <li class="flex items-start">
-            <span class="w-7 h-7 bg-[#00966c] text-white font-bold flex items-center justify-center rounded-full mr-3 flex-shrink-0 text-sm">3</span>
-            <div>
-              <strong class="block text-slate-800 mb-1.5 font-bold">即時着金と出荷プロセスの開始</strong>
-              <p class="text-gray-500 leading-relaxed text-sm">数分以内に海外サプライヤーのウォレットへ着金。着金が即座に確認できるため、現地での出荷・製造プロセスが即座に開始される。</p>
-            </div>
-          </li>
-        </ol>
-      </div>
-
-      <div class="lg:col-span-4 border border-gray-200 rounded-2xl p-8 bg-white flex flex-col shadow-sm">
-        <h3 class="font-bold text-lg border-b border-gray-100 pb-4 mb-6 text-slate-900">劇的な導入効果（比較表）</h3>
-        <div class="text-sm flex-1 flex flex-col justify-between space-y-5">
-          <div class="grid grid-cols-3 gap-2 font-bold text-center items-center">
-            <div class="text-gray-400 text-xs">比較項目</div>
-            <div class="bg-slate-100 text-slate-700 py-2 rounded-lg text-xs leading-tight">導入前</div>
-            <div class="bg-[#00966c] text-white py-2 rounded-lg text-xs leading-tight text-center">導入後</div>
-          </div>
-          <div class="grid grid-cols-3 gap-2 items-center border-b border-gray-50 pb-4">
-            <div class="text-gray-500 font-bold text-xs flex justify-center items-center">
-                <i class="fa-solid fa-coins mr-1 text-slate-400"></i>手数料
-            </div>
-            <div class="text-center text-slate-700 font-medium text-xs leading-tight">数千円<br>（1回あたり）</div>
-            <div class="text-center text-primary font-bold bg-primary-light/50 py-2 rounded-lg text-xs leading-tight"><strong class="text-sm font-black"></strong>8円<br>（1回あたり）</strong></div>
-          </div>
-          <div class="grid grid-cols-3 gap-2 items-center border-b border-gray-50 pb-4">
-            <div class="text-gray-500 font-bold text-xs flex justify-center items-center">
-                <i class="fa-regular fa-clock mr-1 text-slate-400"></i>時間
-            </div>
-            <div class="text-center text-slate-600 text-xs font-bold">2〜3<br>営業日</div>
-            <div class="text-center text-primary font-bold bg-primary-light/50 py-2 rounded-lg text-xs font-black">数秒～数分</div>
-          </div>
-          <div class="grid grid-cols-3 gap-2 items-center">
-            <div class="text-gray-500 font-bold text-xs flex justify-center items-center">
-                <i class="fa-regular fa-user mr-1 text-slate-400"></i>自社の負担
-            </div>
-            <div class="text-center text-slate-600 text-[11px] leading-tight">送金指示や<br>書類提出などの<br>事務負担。</div>
-            <div class="text-center text-primary font-bold bg-primary-light/50 p-2 rounded-lg text-[11px] leading-tight flex justify-center items-center">画面入力だけのシンプルなデジタル完結。</div>
-          </div>
+        <div class="lg:col-span-4 border border-gray-200 rounded-2xl p-8 bg-white shadow-sm">
+            <h3 class="font-bold text-lg border-b border-gray-100 pb-4 mb-6 text-slate-900">JPYC Gatewayでの解決フロー</h3>
+            <ol class="space-y-6 text-base">
+            <li class="flex items-start">
+                <span class="w-7 h-7 bg-[#00966c] text-white font-bold flex items-center justify-center rounded-full mr-3 flex-shrink-0 text-sm">1</span>
+                <div>
+                <strong class="block text-slate-800 mb-1.5 font-bold">自社ECサイトへのAPI連携</strong>
+                <p class="text-gray-500 leading-relaxed text-sm">JPYC GatewayのAPIを自社ECの決済システムへ連携し、支払い方法の選択肢として「JPYC決済」をスマートに組み込み。</p>
+                </div>
+            </li>
+            <li class="flex items-start">
+                <span class="w-7 h-7 bg-[#00966c] text-white font-bold flex items-center justify-center rounded-full mr-3 flex-shrink-0 text-sm">2</span>
+                <div>
+                <strong class="block text-slate-800 mb-1.5 font-bold">購入者によるスマートな決済</strong>
+                <p class="text-gray-500 leading-relaxed text-sm">購入者がECの注文画面でJPYC決済を選択。画面に表示されたQRコードやウォレット接続を介して、その場で決済を実行。</p>               
+                </div>
+            </li>
+            <li class="flex items-start">
+                <span class="w-7 h-7 bg-[#00966c] text-white font-bold flex items-center justify-center rounded-full mr-3 flex-shrink-0 text-sm">3</span>
+                <div>
+                <strong class="block text-slate-800 mb-1.5 font-bold">自動着金確認と最速出荷</strong>
+                <p class="text-gray-500 leading-relaxed text-sm">数秒でブロックチェーン上の着金を検知し、注文ステータスを自動で「支払い済み」に更新。即座に出荷・配送プロセスが動き出す。</p>
+                </div>
+            </li>
+            </ol>
         </div>
-      </div>
+
+        <div class="lg:col-span-4 border border-gray-200 rounded-2xl p-8 bg-white flex flex-col shadow-sm">
+            <h3 class="font-bold text-lg border-b border-gray-100 pb-4 mb-6 text-slate-900">劇的な導入効果（比較表）</h3>
+            <div class="text-sm flex-1 flex flex-col justify-between space-y-5">
+            <div class="grid grid-cols-3 gap-2 font-bold text-center items-center">
+                <div class="text-gray-400 text-xs">比較項目</div>
+                <div class="bg-slate-100 text-slate-700 py-2 rounded-lg text-xs leading-tight">導入前</div>
+                <div class="bg-[#00966c] text-white py-2 rounded-lg text-xs leading-tight text-center">導入後</div>
+            </div>
+            <div class="grid grid-cols-3 gap-2 items-center border-b border-gray-50 pb-4">
+                <div class="text-gray-500 font-bold text-xs flex justify-center items-center">
+                    <i class="fa-solid fa-coins mr-1 text-slate-400"></i>手数料
+                </div>
+                <div class="text-center text-slate-700 font-medium text-xs leading-tight">売上の<br>3.0%〜4.0%</div>
+                <div class="text-center text-primary font-bold bg-primary-light/50 py-2 rounded-lg text-xs leading-tight"><strong class="text-sm font-black">0円</strong><br></div>
+            </div>
+            <div class="grid grid-cols-3 gap-2 items-center border-b border-gray-50 pb-4">
+                <div class="text-gray-500 font-bold text-xs flex justify-center items-center">
+                    <i class="fa-regular fa-clock mr-1 text-slate-400"></i>時間
+                </div>
+                <div class="text-center text-slate-600 text-xs font-bold">数時間〜数日<br>（入金消込待ち）</div>
+                <div class="text-center text-primary font-bold bg-primary-light/50 py-2 rounded-lg text-xs font-black">数秒</div>
+            </div>
+            <div class="grid grid-cols-3 gap-2 items-center">
+                <div class="text-gray-500 font-bold text-xs flex justify-center items-center">
+                    <i class="fa-regular fa-user mr-1 text-slate-400"></i>自社の負担
+                </div>
+                <div class="text-center text-slate-600 text-[11px] leading-tight">目視での確認や<br>手動でのステータス<br>変更などの管理工数。</div>
+                <div class="text-center text-primary font-bold bg-primary-light/50 p-2 rounded-lg text-[11px] leading-tight flex justify-center items-center">API連携による着金検知で、配送準備まで完全自動化。</div>
+            </div>
+            </div>
+        </div>
     </div>
 
     <div class="mt-28 border-t border-gray-100 pt-16 text-center">
-      <h2 class="text-2xl md:text-3xl font-bold text-slate-900 tracking-tight">
-        海外送金のコストと時間を、今すぐ見直しませんか？
-      </h2>
-      <p class="text-lg md:text-xl font-bold text-primary mt-4">
-        JPYC Gatewayが、グローバル調達の競争力を高めます。
-      </p>
+      <h2 class="text-2xl md:text-3xl font-bold text-slate-900 tracking-tight">自社ECサイトの決済コストとバックオフィス業務を、今すぐ見直しませんか？</h2>
+      <p class="text-lg md:text-xl font-bold text-primary mt-4">JPYC Gatewayが、これからのECサイト運営の効率性と収益性を高めます。</p>
         <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center items-center w-full">
             <a href="https://www.asteria.com/jp/contact/reqdoc/" class="inline-flex items-center justify-center bg-[#00966c] hover:bg-emerald-700 text-white font-bold text-lg px-8 py-5 rounded-xl shadow-md transition group w-full sm:w-64">
                 <span>資料請求</span>

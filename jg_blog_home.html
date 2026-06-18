@@ -80,8 +80,61 @@
                 <main class="bg-[#f8fafc] min-h-screen pb-24 antialiased">
                     <div class="mx-auto px-6 md:px-8 max-w-[1400px] pt-8">
 
-                        <section class="mb-16" id="latest-article">
-                            <div class="text-center py-12 text-slate-400 text-sm">記事を読み込み中...</div>
+                        <section class="mb-16">
+                            <!-- 全体をクリックできるようにするため、カード自体に「relative」を追加しています -->
+                            <div class="bg-white border border-slate-100 rounded-2xl p-6 md:p-8 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.03)] hover:shadow-[0_4px_30px_-4px_rgba(0,0,0,0.06)] transition-all group relative cursor-pointer">
+                                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                                    
+                                    <!-- 左側：ブログのトップ画像エリア -->
+                                    <div class="lg:col-span-5 aspect-[16/10] bg-slate-100 rounded-xl overflow-hidden relative shadow-sm">
+                                        <img src="img/Blog/blog_2.png" alt="ステーブルコインとは？" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out">
+                                        <div class="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent pointer-events-none"></div>
+                                        <div class="absolute bottom-4 left-4 bg-black/60 backdrop-blur-md text-white text-[10px] font-bold tracking-widest uppercase px-2.5 py-1 rounded-md z-10">最新記事</div>
+                                    </div>
+                                    
+                                    <!-- 右側：記事のタイトル・文章エリア -->
+                                    <div class="lg:col-span-7 flex flex-col justify-center">
+                                        <span class="text-[11px] font-bold tracking-widest text-brand-green uppercase mb-2 block">LATEST ARTICLE</span>
+                                        
+                                        <h2 class="text-xl md:text-2xl font-bold text-slate-900 leading-snug group-hover:text-brand-green transition-colors duration-300 mb-4">
+                                            <!-- 【重要】「after:absolute after:inset-0 after:z-20」を追加し、このリンクをカード全体に広げています -->
+                                            <a href="（ここに記事のURLを入れる）" class="after:absolute after:inset-0 after:z-20">ステーブルコインとは？ビジネス導入前に知っておきたい基礎知識と活用法</a>
+                                        </h2>
+                                        
+                                        <p class="text-slate-500 text-sm leading-relaxed mb-6 line-clamp-3">
+                                            「ステーブルコイン＝暗号資産（仮想通貨）」と思っていませんか？実は2023年の法改正以降、日本国内において決済に利用されるステーブルコインは、ビットコインなどの暗号資産とは異なる「電子決済手段」として定義されています。
+                                        </p>
+                                                                                
+                                    </div>
+
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="mb-16">
+                            <a href="（ここにニュース解説専用ページのURLを入れる）" class="relative block overflow-hidden rounded-2xl bg-gradient-to-r from-brand-green via-[#00a373] to-brand-blue p-px shadow-[0_10px_30px_-10px_rgba(0,187,89,0.3)] transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_20px_40px_-10px_rgba(0,187,89,0.5)] group">
+                                <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.12),transparent_50%)]"></div>
+                                <div class="relative bg-slate-900/90 rounded-[15px] p-6 md:p-8 backdrop-blur-sm flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+                                    <div class="space-y-2">
+                                        <div class="inline-flex items-center gap-2 px-3 py-1 bg-brand-green/10 border border-brand-green/30 text-brand-green text-xs font-bold rounded-full tracking-wider">
+                                            <span class="flex h-2 w-2 relative">
+                                                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-green opacity-75"></span>
+                                                <span class="relative inline-flex rounded-full h-2 w-2 bg-brand-green"></span>
+                                            </span>
+                                            STABLECOIN INSIGHTS
+                                        </div>
+                                        <h3 class="text-lg md:text-xl font-bold text-white tracking-wide">
+                                            ステーブルコイン ニュース＆インサイト
+                                        </h3>
+                                        <p class="text-slate-400 text-xs md:text-sm max-w-2xl font-medium">
+                                            国内外の法規制、新技術、ビジネス導入事例など、ステーブルコイン市場の「今」と「これから」を<br>分かりやすく解説します。
+                                        </p>
+                                    </div>
+                                    <div class="flex items-center justify-center bg-brand-green text-white w-12 h-12 rounded-full shadow-[0_4px_12px_rgba(0,187,89,0.3)] group-hover:bg-brand-blue group-hover:shadow-[0_4px_12px_rgba(0,103,255,0.3)] shrink-0 self-end md:self-auto transition-all duration-300">
+                                        <i class="fas fa-arrow-right text-sm transition-transform duration-300 group-hover:translate-x-1"></i>
+                                    </div>
+                                </div>
+                            </a>
                         </section>
 
 
@@ -92,7 +145,42 @@
                                 </h3>
                             </div>
 
-                            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="articles-grid">
+                            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                                
+                                <article class="relative bg-white border border-slate-100 rounded-2xl overflow-hidden shadow-[0_4px_15px_-4px_rgba(0,0,0,0.02)] hover:shadow-[0_10px_25px_-5px_rgba(0,0,0,0.05)] hover:-translate-y-1 transition-all duration-500 ease-out group flex flex-col">
+                                    <div class="aspect-[16/10] bg-slate-900 overflow-hidden flex items-center justify-center relative">
+                                        <img src="img/Blog/blog_1.png" alt="JPYC Gateway ブログ図" class="w-full h-full object-cover">
+                                    </div>
+
+                                    <div class="p-6 flex flex-col flex-grow">
+                                        <div class="flex items-center gap-3 mb-3">
+                                            <span class="text-[10px] font-bold tracking-widest text-brand-green uppercase">決済DX・財務DX</span>
+                                        </div>
+                                        
+                                        <h4 class="font-bold text-slate-900 text-base leading-snug line-clamp-3 group-hover:text-brand-green transition-colors duration-300 mb-6">
+                                            <a href="https://jpyc.co.jp/news/jpyc_gateway_4_1" class="after:absolute after:inset-0 after:z-30">企業の決済DXを加速させる「JPYC Gateway」とは？導入メリットと活用ステップを徹底解説</a>
+                                        </h4>
+
+                                        <div class="mt-auto pt-4 border-t border-slate-100 flex items-center justify-between text-slate-500">
+                                            <div class="flex items-center gap-4 text-xs">
+                                                <div class="flex items-center gap-1.5">
+                                                    <svg class="w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" />
+                                                    </svg>
+                                                    <span>2025.06.05</span>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="flex items-center gap-1.5 text-blue-600 text-xs font-medium group-hover:text-blue-700 transition-colors">
+                                                続きを読む
+                                                <svg class="w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+
                             </div>
                         </section>
 
@@ -140,28 +228,5 @@
                     </div>
                 </footer>
 
-            <script id="blog-posts-data" type="application/json">[
-  {
-    "id": "jg_blog_2",
-    "title": "ステーブルコインとは？ビジネス導入前に知っておきたい基礎知識と活用法",
-    "url": "jg_blog_2.html",
-    "image": "img/Blog/blog_2.png",
-    "imageAlt": "ステーブルコインとは？ビジネス導入前に知っておきたい基礎知識と活用法",
-    "category": "ステーブルコイン基礎",
-    "date": "2026.06.05",
-    "excerpt": "「ステーブルコイン＝暗号資産（仮想通貨）」と思っていませんか？"
-  },
-  {
-    "id": "jg_blog_1",
-    "title": "企業の決済DXを加速させる「JPYC Gateway」とは？導入メリットと活用ステップを徹底解説",
-    "url": "jg_blog_1.html",
-    "image": "img/Blog/blog_1.png",
-    "imageAlt": "企業の決済DXを加速させる「JPYC Gateway」とは？導入メリットと活用ステップを徹底解説",
-    "category": "決済DX・財務DX",
-    "date": "2026.06.04",
-    "excerpt": "「ステーブルコインをビジネスで使いたいけれど、管理が難しそう……」 「銀行振込の手数料を、もっと劇的に削減できないだろうか？」"
-  }
-]</script>
-            <script src="js/blog-home.js"></script>
         </body>
     </html>
