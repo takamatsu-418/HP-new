@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ja" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>「デジタルな円」JPYCの安全性とは？――もし発行会社が破綻してもお金は守られるのか？ | JPYC Gateway ブログ</title>
+    <link rel="icon" href="img/logo_noname.png" type="image/png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            green: '#00bb59',
+                            blue: '#0067ff',
+                        },
+                        navy: '#0F172A',
+                    },
+                    fontFamily: {
+                        sans: ['"Inter"', '"Noto Sans JP"', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body { font-family: "Inter", "Noto Sans JP", sans-serif; color: #1E293B; background-color: #F8FAFC; }
+        .text-gradient {
+            background: linear-gradient(135deg, #00bb59 0%, #0067ff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .card-shadow {
+            box-shadow: 0 10px 30px rgba(0,0,0,0.02);
+            transition: all 0.3s ease;
+        }
+        .card-shadow:hover { transform: translateY(-3px); box-shadow: 0 15px 35px rgba(0,0,0,0.06); }
+        
+        /* 💡 ここから下の文字サイズを一回り大きく調整しました */
+        .blog-content h1 { font-size: 2rem; font-weight: 900 !important; color: #0F172A; line-height: 1.3; margin-bottom: 2rem; }
+        @media (min-width: 768px) {
+            .blog-content h1 { font-size: 3rem; } /* 👈 PC環境でガツンと大きく（48px相当） */
+        }
+
+        .blog-content h2 { font-size: 1.85rem; font-weight: 900 !important; color: #0F172A; border-left: 5px solid #00bb59; padding-left: 1.25rem; margin-top: 3.5rem; margin-bottom: 1.75rem; line-height: 1.3; }
+        .blog-content h3 { font-size: 1.45rem; font-weight: 900 !important; color: #0F172A; margin-top: 2.5rem; margin-bottom: 1.25rem; line-height: 1.4; display: flex; align-items: center; gap: 0.5rem; }
+        .blog-content p { font-size: 1.05rem; line-height: 1.9; margin-bottom: 1.75rem; color: #334155; font-weight: 500; }
+        .blog-content strong { font-weight: 900 !important; color: #0F172A; }
+        .blog-content ul { list-style-type: disc !important; padding-left: 1.75rem !important; margin-bottom: 2.25rem; }
+        .blog-content li { font-size: 1.05rem; font-weight: 700; color: #334155; margin-bottom: 0.85rem; line-height: 1.75; }
+    </style>
+</head>
+
+<body class="antialiased">
+
+    <header class="fixed w-full z-50 bg-white border-b border-slate-100">
+        <div class="max-w-[1400px] mx-auto px-6 md:px-8 h-24 flex items-center justify-between">
+            <div class="flex items-center gap-10">
+                <div class="flex items-center">
+                    <a href="index.html">
+                        <img src="img/logo.png" alt="JPYC Gateway" class="h-8 md:h-10 w-auto">
+                    </a>
+                </div>
+                <nav class="hidden lg:flex items-center gap-4 xl:gap-8 text-sm xl:text-[15px] font-bold text-navy">
+                    <a href="#features" class="hover:text-brand-green transition">機能</a>
+                    <a href="#pricing" class="hover:text-brand-green transition">料金</a>
+                    <a href="#faq" class="hover:text-brand-green transition">FAQ</a>
+                    <a href="https://jpycgateway.com/blog.html" class="text-brand-green transition">ブログ</a>
+                    <a href="https://jpycgateway.com/blog.html" class="hover:text-brand-green transition">ユースケース</a>
+                </nav>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="https://www.asteria.com/jp/contact/entry/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-10 py-4 bg-gradient-to-r from-brand-green to-[#2BC068] text-white rounded-full text-sm font-bold tracking-[0.1em] shadow-[0_10px_20px_-10px_rgba(36,175,88,0.4)] hover:shadow-[0_15px_30px_-10px_rgba(36,175,88,0.6)] hover:-translate-y-1 active:scale-95 transition-all duration-500 group"><span class="relative">お問合せ</span><i class="fas fa-arrow-right ml-3 text-xs transition-transform duration-300 group-hover:translate-x-1"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <div class="pt-[88px] bg-white">
+        <div class="bg-[#f8fafc] border-b border-slate-100">
+            <div class="mx-auto px-6 md:px-8 max-w-[1400px] py-3">
+                <nav class="flex items-center text-[11px] font-medium text-slate-400 gap-2">
+                    <a href="index.html" class="hover:text-brand-green transition-colors">TOP</a>
+                    <span class="text-slate-300 font-normal">&gt;</span>
+                    <a href="#" class="hover:text-brand-green transition-colors">公式ブログ</a>
+                    <span class="text-slate-300 font-normal">&gt;</span>
+                    <span class="text-slate-600 font-normal truncate">JPYC Gatewayとは？</span>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div class="mx-auto px-6 md:px-8 max-w-[1400px] py-10">
+        <div class="grid lg:grid-cols-7 gap-12 xl:gap-16 items-start">
+            
+            <main class="lg:col-span-5 max-w-[960px] w-full justify-self-stretch">
+                <article class="bg-white rounded-3xl p-6 md:p-12 border border-slate-200/60 shadow-sm">
+                    
+                    <div class="flex items-center gap-3 text-xs font-bold text-slate-400 mb-6">
+                        <time datetime="2026-05-19"><i class="far fa-calendar mr-1"></i>2026.06.17  </time>
+                        <span class="bg-emerald-50 text-brand-blue px-3 py-1 rounded-full">ステーブルコイン基礎</span>
+                    </div>
+
+                    <div class="blog-content">
+                        <h1><strong>「デジタルな円」JPYCの安全性とは？――もし発行会社が破綻してもお金は守られるのか？</strong></h1>
+                        
+                        <div class="mt-6 mb-12 overflow-hidden rounded-2xl border border-slate-100 shadow-md">
+                            <img src="img/Blog/blog_7.png" alt="企業の決済DXを加速させるJPYC Gateway" class="w-full h-auto object-cover block">
+                        </div>
+
+                        <div class="text-slate-600 bg-slate-50 p-6 rounded-2xl border border-slate-100 mb-8 font-medium">
+                            <p class="m-0">AIが自ら支払いを行う時代や、Web3の世界で注目を集めているJPYC。「1JPYC=1円」として使えるデジタル通貨ですが、目に見えない存在だけに「本当に信用していいの？」と不安を感じる方もいるでしょう。</p>
+                            <p class="m-0 mt-4 !mb-0">今回は、JPYCの仕組みから、万が一の際の保護機能、そして安全に使いこなすためのツールまでを徹底解説します。</p>
+                        </div>
+  
+                        <div class="bg-white border border-slate-200 rounded-2xl p-6 md:p-8 mb-10 shadow-sm">
+                            <p class="font-black text-navy m-0 mb-4 text-base md:text-lg flex items-center justify-center gap-2" style="font-weight: 900 !important;">
+                                <span>目次</span>
+                            </p>
+                            <ul class="list-none p-0 m-0 space-y-3.5 text-sm md:text-base font-bold">
+                                <li class="m-0 flex items-baseline gap-2">
+                                    <span class="text-brand-green font-mono text-xs md:text-sm">01.</span>
+                                    <a href="#section1" class="text-slate-600 hover:text-brand-green hover:underline transition">そもそもJPYCとは？</a>
+                                </li>
+                                <li class="m-0 flex items-baseline gap-2 border-t border-slate-100 pt-3.5">
+                                    <span class="text-brand-green font-mono text-xs md:text-sm">02.</span>
+                                    <a href="#section2" class="text-slate-600 hover:text-brand-green hover:underline transition">「電子決済手段」という新しい信頼の基準</a>
+                                </li>
+                                <li class="m-0 flex items-baseline gap-2 border-t border-slate-100 pt-3.5">
+                                    <span class="text-brand-green font-mono text-xs md:text-sm">03.</span>
+                                    <a href="#section3" class="text-slate-600 hover:text-brand-green hover:underline transition">私たちの資産を守る「二重のロック」</a>
+                                </li>
+                                <li class="m-0 flex items-baseline gap-2 border-t border-slate-100 pt-3.5">
+                                    <span class="text-brand-green font-mono text-xs md:text-sm">04.</span>
+                                    <a href="#section4" class="text-slate-600 hover:text-brand-green hover:underline transition">よりスマート・安全に使うなら「JPYC Gateway」</a>
+                                </li>
+                                <li class="m-0 flex items-baseline gap-2 border-t border-slate-100 pt-3.5">
+                                    <span class="text-brand-green font-mono text-xs md:text-sm">05.</span>
+                                    <a href="#section5" class="text-slate-600 hover:text-brand-green hover:underline transition">覚えておくべき「リスク」と向き合い方</a>
+                                </li>
+                                <li class="m-0 flex items-baseline gap-2 border-t border-slate-100 pt-3.5">
+                                    <span class="text-brand-green font-mono text-xs md:text-sm">06.</span>
+                                    <a href="#section6" class="text-slate-600 hover:text-brand-green hover:underline transition">まとめ：正しく知って、次世代のインフラを体験する</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <h2 id="section1" class="scroll-mt-28">1. そもそもJPYCとは？</h2>
+                        <p>JPYCは、ブロックチェーン技術を使って発行される「日本円連動型ステーブルコイン」です。</p>
+                        <ul>
+                            <li>
+                                <span class="text-brand-green">ステーブル（安定）</span>
+                                <p style="padding-left: 1em; margin: 4px 0 0 0;">ビットコインのように価格が激しく変動せず、常に「1JPYC=1円」の価値を維持するよう設計されています。</p>
+                            </li>
+                            <li>
+                                <span class="text-brand-green">次世代のインフラ</span>
+                                <p style="padding-left: 1em; margin: 4px 0 0 0;">人間だけでなく、AI（プログラム）が24時間365日、瞬時に決済を行うために最適な「プログラム可能な現金」としての側面を持っています。</p>
+                            </li>
+                        </ul>
+
+                        <hr class="border-t-2 border-slate-200 my-8">
+                        <h2 id="section2" class="scroll-mt-28 mt-0">2.「電子決済手段」という新しい信頼の基準</h2>                        
+                        <p>かつてデジタル上のコインは、法律上「商品券」に近い扱いでした。しかし、現在は法改正により、より厳格な管理が求められる「電子決済手段」という、新しい法的枠組みの中で運営されています。</p>
+                        <p>これは、単なるネット上のクーポンとは全く異なり、銀行預金に準ずるような「資産としての安全性」が国によって求められる仕組みです。</p>
+
+                    <section class="mb-16">
+                        <hr class="border-t-2 border-slate-200 my-8">
+                        <h2 id="section3" class="scroll-mt-28 text-2xl md:text-3xl font-black text-navy mt-14 mb-6 border-l-4 border-brand-green pl-4 leading-tight">3. 私たちの資産を守る「二重のロック」</h2>
+                        <p>JPYCの安全性は、運営会社の「信頼」だけに依存しているわけではありません。「法律」と「仕組み」によって物理的に守られています。</p>
+                        <h3>① 「絶対に混ぜない」資産の完全分別</h3>
+                        <p>法律により、JPYC社が事業で使うお金（オフィス代や人件費など）と、ユーザーが購入したJPYCの裏付けとなる資産は、1円単位で完全に分けて管理することが義務付けられています。</p>
+                        <h3>② 第三者機関による「資産の隔離（信託）」</h3>
+                        <p>これが最大の守りです。裏付けとなる資産は、JPYC社の金庫にあるのではなく、外部の「信託銀行」などに預けられています（信託保全）。</p>
+                        <p>もし発行元であるJPYC社に万が一のことがあっても、お金そのものは外部に隔離されているため、ユーザーへ優先的に払い戻しを行うことが法律で保証されています。</p>
+                    </section>
+
+                    <section class="mb-16">
+                        <hr class="border-t-2 border-slate-200 my-8">
+                        <h2 id="section4" class="scroll-mt-28">4. よりスマート・安全に使うなら「JPYC Gateway」</h2>
+                        <p>仕組みが安全でも、実際に扱うとなると「ウォレットの管理が難しそう」「手数料（ガス代）の計算が面倒」と感じるかもしれません。そこで、特にビジネスや本格的な利用を考える際におすすめなのが「JPYC Gateway」です。</p>
+                        <p>JPYC Gatewayを利用すると、ステーブルコイン特有の「使いにくさ」が大幅に解消されます。</p>
+                        <ul>
+                            <li>
+                                <span class="text-brand-green">銀行感覚の操作性</span>
+                                <p style="padding-left: 1em; margin: 4px 0 0 0;">複雑なブロックチェーンの知識がなくても、既存の銀行振込や経理システムに近い感覚で、安全にJPYCを管理・送金できます。</p>
+                            </li>
+                            <li>
+                                <span class="text-brand-green">ガス代の悩みから解放</span>
+                                <p style="padding-left: 1em; margin: 4px 0 0 0;">本来、送金には専用の「ガス代（手数料）」が必要ですが、Gatewayを経由することで、こうした専門的な手間を意識せずに利用可能です。</p>
+                            </li>
+                            <li>
+                                <span class="text-brand-green">法人・組織での管理に最適</span>
+                                <p style="padding-left: 1em; margin: 4px 0 0 0;">「誰が・いつ・いくら送ったか」の履歴管理や承認フローなど、組織で使うためのガバナンス機能が備わっています。</p>
+                            </li>
+                        </ul>
+                        <p>「個人でウォレットを管理するのは少し不安」という方にとって、安全性を高めつつ利便性を確保する強力な窓口となります。</p>
+                    </section>
+
+                    <section class="mb-16">
+                        <hr class="border-t-2 border-slate-200 my-8">
+                        <h2 id="section5" class="scroll-mt-28">5. 覚えておくべき「リスク」と向き合い方</h2>
+                        <p>「100%絶対安全」なものは存在しません。利用する際は以下の点も理解しておきましょう。</p>
+                        <ul>
+                            <li>
+                                <span class="text-brand-green">管理の責任</span>
+                                <p style="padding-left: 1em; margin: 4px 0 0 0;">Gatewayなどを使わない個人管理の場合、財布（ウォレット）の鍵を紛失すると、お金を取り戻すことは困難です。</p>
+                            </li>
+                            <li>
+                                <span class="text-brand-green">手続きの時間</span>
+                                <p style="padding-left: 1em; margin: 4px 0 0 0;"> 万が一の破綻時には、国や銀行が介入して還付手続きを行うため、現金が手元に戻るまでには相応の時間がかかります。</p>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <hr class="border-t-2 border-slate-200 my-8">
+                        <h2 id="section6" class="scroll-mt-28">6. まとめ：正しく知って、次世代のインフラを体験する</h2>
+                        <p>JPYCは、日本の厳しい法律の下で管理されている「法的に裏打ちされた新しいお金」です。</p>
+                        <p>単なる決済手段の枠を超え、AIやWeb3が普及するこれからの社会において、最も信頼できる「デジタルの現金」の一つと言えるでしょう。</p>
+                        <p>「JPYC Gateway」のような便利なツールも活用しながら、まずは少額から、この法律とテクノロジーに守られた新しい便利さを体験してみてはいかがでしょうか。</p>
+                    </div>
+
+                    <div class="mt-20">
+                        <div class="bg-slate-50/80 rounded-2xl p-6 md:p-8 border border-slate-200/60 flex flex-col md:flex-row gap-6 items-center md:items-start text-left">
+                            <div class="flex-shrink-0">
+                                <div class="w-20 h-20 md:w-24 md:h-24 rounded-full overflow-hidden border-2 border-white shadow-sm bg-slate-200">
+                                    <img src="img/Blog/face.png" alt="執筆者：赤松 智彦" class="w-full h-full object-cover" style="image-rendering: -webkit-optimize-contrast; image-rendering: crisp-edges; transform: translateZ(0);">
+                                </div>
+                            </div>
+                            <div class="flex-grow">
+                                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
+                                    <div>
+                                        <span class="text-xs font-bold text-brand-green tracking-wider block uppercase mb-1">Author</span>
+                                        <h4 class="text-lg font-black text-navy m-0">赤松 智彦</h4>
+                                        <p class="text-xs text-slate-400 font-bold m-0 mt-0.5">アステリア株式会社 / ステーブルコイン事業部</p>
+                                    </div>
+                                </div>
+                                <p class="text-sm leading-relaxed text-slate-600 font-medium m-0">システム連携やデータ活用の知見から、企業の「財務DX」や「デジタル通貨のビジネス活用」をテーマに、日本円ステーブルコインの普及に向けた実務ノウハウや最新トレンドなどのお役立ち情報をお届けします。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </article>
+            </main>
+
+            <aside class="space-y-8 sticky top-28 lg:col-span-2">
+                
+                <div class="bg-navy text-white rounded-3xl p-8 relative overflow-hidden shadow-xl">
+                    <div class="absolute -right-6 -bottom-6 text-8xl font-black text-white/[0.03] select-none pointer-events-none">DX</div>
+                    <span class="text-brand-green font-black text-[10px] tracking-widest uppercase block mb-2">Next Gen Wallet</span>
+                    <h3 class="text-white text-xl font-black mb-4 m-0">JPYC Gateway</h3>
+                    <p class="text-slate-400 text-sm font-bold leading-relaxed mb-6">
+                        煩雑な銀行振込の手間とコストをスマートに解決。日本円ステーブルコインをビジネスの強力な武器へ。
+                    </p>
+                    <a href="https://www.asteria.com/jp/contact/reqdoc/" target="_blank" rel="noopener noreferrer" class="w-full text-center bg-brand-green text-white font-black py-4 px-6 rounded-xl block text-sm shadow-lg shadow-brand-green/20 hover:scale-[1.02] transition duration-300">
+                        今すぐ資料をダウンロード
+                    </a>
+                </div>
+
+            </aside>
+        </div>
+    </div>
+
+    <footer class="bg-navy pt-24 pb-12 text-white/90 border-t border-white/10">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row justify-between gap-20 mb-20">
+                <div class="max-w-xs">
+                    <div class="flex items-center">
+                         <a href="#">
+                             <img src="img/logo_white.svg" alt="JPYC Gateway" class="h-12 md:h-16 w-auto">
+                        </a>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-12">
+                    <div class="space-y-4">
+                        <p class="font-black text-white text-xs tracking-widest">PRODUCT</p>
+                        <ul class="space-y-3 text-sm font-bold text-slate-400">
+                            <li><a href="features" class="hover:text-brand-green transition">機能一覧</a></li>
+                            <li><a href="#integration" class="hover:text-brand-green transition">連携システム</a></li>
+                        </ul>
+                    </div>
+                    <div class="space-y-4">
+                        <p class="font-black text-white text-xs tracking-widest">RESOURCES</p>
+                        <ul class="space-y-3 text-sm font-bold text-slate-400">
+                            <li><a href="https://jpycgateway.com/blog.html" class="hover:text-brand-green transition">ブログ</a></li>
+                            <li><a href="#" class="hover:text-brand-green transition">ユースケース</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row justify-between items-center text-[10px] font-bold text-slate-500 gap-4 pt-8 border-t border-white/5">
+                <p>&copy; 1998-2026 Asteria Corporation. All Rights reserved.</p>
+                <div class="flex gap-8">
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="hover:text-white transition">利用規約</a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="hover:text-white transition">サポート規約</a>
+                    <a href="https://www.asteria.com/jp/privacy/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition">プライバシーポリシー</a>
+                    <a href="https://jp.asteria.com/company/profile/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition">会社概要</a>
+                    <a href="https://www.asteria.com/jp/terms/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition">アステリア製品共通利用規約</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
