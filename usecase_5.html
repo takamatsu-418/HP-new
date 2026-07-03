@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ja" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JPYC Gateway | ユースケース</title>
+    <link rel="icon" href="img/logo_noname.png" type="image/png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            green: '#00bb59',
+                            blue: '#0067ff',
+                        },
+                        navy: '#0F172A',
+                    },
+                    fontFamily: {
+                        sans: ['"Inter"', '"Noto Sans JP"', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body { font-family: "Inter", "Noto Sans JP", sans-serif; color: #1E293B; background-color: #FFFFFF; }
+        .btn-brand { 
+            background-color: #00bb59;
+            color: white; 
+            transition: all 0.3s ease; 
+            font-weight: 700;
+        }
+        .btn-brand:hover { background-color: #00bb59; transform: translateY(-2px); }
+        .text-gradient {
+            background: linear-gradient(135deg, #00bb59 0%, #0067ff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .card-shadow {
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            transition: all 0.5s ease-out;
+        }
+        .card-shadow:hover { transform: translateY(-5px); }
+        
+        @keyframes sweep {
+            0% { opacity: 0; transform: translateY(-10px); }
+            100% { opacity: 1; transform: translateY(0); }
+}
+    </style>
+</head>
+<body class="antialiased">
+
+    <header class="fixed w-full z-50 bg-white border-b border-slate-100">
+        <div class="container mx-auto px-6 h-24 flex items-center justify-between">
+            <div class="flex items-center gap-10">
+                <div class="flex items-center">
+                    <a href="#">
+                        <img src="img/logo.png" alt="JPYC Gateway" class="h-8 md:h-10 w-auto">
+                    </a>
+                </div>
+                <nav class="hidden lg:flex items-center gap-4 xl:gap-8 text-sm xl:text-[15px] font-bold text-navy">
+                    <a href="#features" class="hover:text-brand-green transition">機能</a>
+                    <a href="#pricing" class="hover:text-brand-green transition">料金</a>
+                    <a href="#faq" class="hover:text-brand-green transition">FAQ</a>
+                    <a href="https://jpycgateway.com/blog.html" class="hover:text-brand-green transition">ブログ</a>
+                    <a href="https://jpycgateway.com/blog.html" class="text-brand-green transition">ユースケース</a>
+                </nav>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="https://www.asteria.com/jp/contact/entry/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-10 py-4 bg-gradient-to-r from-brand-green to-[#2BC068] text-white rounded-full text-sm font-bold tracking-[0.1em] shadow-[0_10px_20px_-10px_rgba(36,175,88,0.4)] hover:shadow-[0_15px_30px_-10px_rgba(36,175,88,0.6)] hover:-translate-y-1 active:scale-95 transition-all duration-500 group"><span class="relative">お問合せ</span><i class="fas fa-arrow-right ml-3 text-xs transition-transform duration-300 group-hover:translate-x-1"></i></a>
+            </div>
+        </div>
+    </header>
+
+  <div class="max-w-7xl mx-auto px-6 pt-6 text-sm text-gray-400 flex items-center space-x-2">
+    <span>ホーム</span><span>&gt;</span><span>ユースケース</span><span>&gt;</span><span class="text-gray-600">国内外のクリエイターへの送金コストと速度を改善。</span>
+  </div>
+
+  <main class="max-w-7xl mx-auto px-6 py-12">
+    <div class="inline-block bg-primary text-white text-sm font-bold px-4 py-1.5 rounded mb-6">
+      ユースケース
+    </div>
+    
+    <div class="grid md:grid-cols-12 gap-10 items-center">
+        <div class="md:col-span-8">
+            <h1 class="text-4xl md:text-6xl font-black text-slate-950 leading-tight">EDI取引の送金コストと<br>タイムラグを大幅削減</h1>
+            <p class="text-2xl md:text-3xl font-bold text-slate-700 mt-6">B2B取引・購買業務を展開する企業のユースケース</p>
+            <p class="text-base md:text-xl text-gray-600 leading-relaxed mt-6 max-w-3xl">従来の企業間取引（EDI）における銀行振込では、支払・着金確認のタイムラグや、大量の取引に伴う振込手数料が課題となっていました。データ連携からステーブルコインによる即時決済までの一連のプロセスを自動化し、取引の高速化とコストの劇的な削減を実現します。</p>
+        </div>
+        <img src="img/usecase/usecase_5.png" alt="EDIとJPYC Gatewayの連携イメージ" class="md:col-span-4 w-full h-auto rounded-2xl border border-gray-100 shadow-sm">
+    </div>
+
+    <section class="mt-24">
+        <h2 class="text-[28px] font-extrabold text-center text-[#11224d] mb-12 tracking-tight">導入前と導入後の比較</h2>
+        
+        <div class="flex flex-col lg:flex-row items-center justify-between gap-4 relative"> 
+            <div class="w-full lg:w-[47%] bg-[#f7f9fa] border border-[#eef1f2] rounded-2xl p-6 shadow-sm flex flex-col justify-between min-h-[380px]">
+                <div class="bg-[#59606d] text-white text-center text-base font-bold py-3.5 px-4 rounded-xl tracking-wide mb-8">
+                    導入前：システムが分断された手作業の銀行振込
+                </div>
+                <div class="flex items-center justify-between text-center font-bold text-[#11224d] px-2 mb-10">
+                    <div class="flex flex-col items-center w-24">
+                        <i class="fa-solid fa-building text-4xl text-[#59606d]/80 mb-2"></i>
+                        <span class="text-xs leading-tight">EDI/基幹システム<br><span class="text-[11px] text-gray-500 font-normal">(連携がなく孤立)</span></span>
+                    </div>
+                    <i class="fa-solid fa-arrow-right text-gray-300 text-sm"></i>
+                    <div class="flex flex-col items-center w-24">
+                        <i class="fa-solid fa-bank text-4xl text-[#59606d]/80 mb-2"></i>
+                        <span class="text-xs leading-tight">手動でのFB振込<br><span class="text-[11px] text-gray-500 font-normal">(都度の手数料)</span></span>
+                    </div>
+                    <i class="fa-solid fa-arrow-right text-gray-300 text-sm"></i>
+                    <div class="flex flex-col items-center w-24">
+                        <i class="fa-solid fa-truck text-4xl text-[#59606d]/80 mb-2"></i>
+                        <span class="text-xs leading-tight">取引先<br><span class="text-[11px] text-gray-500 font-normal">(着金確認のラグ)</span></span>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-4 mt-auto">
+                    <div class="bg-white p-5 rounded-2xl text-center border border-gray-100 shadow-sm flex flex-col justify-center">
+                        <span class="text-sm text-gray-500 font-bold block mb-1">決済・送金コスト</span>
+                        <span class="text-[17px] font-black text-[#11224d] tracking-tight">数百円〜数千円 / 件</span>
+                        <span class="text-[11px] text-gray-400 block mt-1">(取引件数に応じた高い振込手数料)</span>
+                    </div>
+                    <div class="bg-white p-5 rounded-2xl text-center border border-gray-100 shadow-sm flex flex-col justify-center">
+                        <span class="text-sm text-gray-500 font-bold block mb-1">データ連携・決済サイクル</span>
+                        <span class="text-[17px] font-black text-[#11224d] tracking-tight">手作業によるタイムラグ</span>
+                        <span class="text-[11px] text-gray-400 block mt-1">(データの出力・二重入力の手間)</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hidden lg:flex items-center justify-center w-[6%] text-[#00966c] text-4xl animate-pulse">
+                <i class="fa-solid fa-play"></i>
+            </div>
+
+            <div class="w-full lg:w-[47%] bg-[#f2fbf7] border border-[#d6f2e6] rounded-2xl p-6 shadow-sm flex flex-col justify-between min-h-[380px]">
+                <div class="bg-[#00966c] text-white text-center text-base font-bold py-3.5 px-4 rounded-xl tracking-wide mb-8">
+                    導入後：JPYC Gateway × ASTERIA Warpによる自動即時決済
+                </div>
+                <div class="flex items-center justify-between text-center font-bold text-[#11224d] px-4 mb-10">
+                    <div class="flex flex-col items-center w-24">
+                        <i class="fa-solid fa-network-wired text-4xl text-[#11224d]/80 mb-2"></i>
+                        <span class="text-xs leading-tight">EDI ⇄ システム<br><span class="text-[11px] text-[#00966c] font-bold">(ノーコード連携)</span></span>
+                    </div>
+                    <i class="fa-solid fa-arrow-right text-[#00966c] text-sm"></i>
+                    
+                    <div class="border-2 border-[#00966c] rounded-2xl px-5 py-3.5 bg-white shadow-sm flex flex-col items-center justify-center min-w-[140px]">
+                        <img src="img/logo.png" alt="JPYC Gateway" class="h-10 w-auto object-contain">
+                    </div>
+                    
+                    <i class="fa-solid fa-arrow-right text-[#00966c] text-sm"></i>
+                    <div class="flex flex-col items-center w-24">
+                        <i class="fa-solid fa-truck text-4xl text-[#11224d]/80 mb-2"></i>
+                        <span class="text-xs leading-tight">取引先<br><span class="text-[11px] text-[#00966c] font-bold">(自動消込)</span></span>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-4 mt-auto">
+                    <div class="bg-white p-5 rounded-2xl text-center border border-[#d6f2e6] shadow-sm flex flex-col justify-center">
+                        <span class="text-sm text-[#00966c] font-extrabold block mb-1">決済・送金コスト</span>
+                        <span class="text-[21px] font-black text-[#00966c] tracking-tight">大幅削減</span>
+                        <span class="text-[11px] text-[#00966c]/80 block mt-1 leading-normal">ステーブルコインで送金コストを最適化</span>
+                    </div>
+                    <div class="bg-white p-5 rounded-2xl text-center border border-[#d6f2e6] shadow-sm flex flex-col justify-center">
+                        <span class="text-sm text-[#00966c] font-extrabold block mb-1">データ連携・決済サイクル</span>
+                        <span class="text-[21px] font-black text-[#00966c] tracking-tight">完全自動・即時</span>
+                        <span class="text-[11px] text-[#00966c]/80 block mt-1 leading-normal">ASTERIA Warpで自動処理</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-24">
+        <h2 class="text-3xl font-bold text-center text-slate-900 mb-12">このユースケースにおける効果</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            
+            <div class="bg-emerald-50/40 border border-emerald-100 rounded-2xl p-8 text-center flex flex-col justify-between shadow-sm">
+                <div>
+                    <div class="w-14 h-14 mx-auto bg-white rounded-full flex items-center justify-center border border-emerald-200 text-primary mb-5 shadow-sm text-xl">
+                        <i class="fa-solid fa-coins"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-primary">決済コストの削減</h3>
+                    <p class="text-base text-slate-700 font-bold mt-4 leading-relaxed">大量に発生する企業間決済の振込手数料を<br><span class="text-2xl text-primary font-black">劇的に引き下げ</span></p>
+                </div>
+                <div class="bg-emerald-50 border border-emerald-200 text-primary text-sm font-bold py-2 px-4 rounded-full mt-8 inline-block">
+                    ステーブルコイン活用による手数料の最適化
+                </div>
+            </div>
+
+            <div class="bg-blue-50/40 border border-blue-100 rounded-2xl p-8 text-center flex flex-col justify-between shadow-sm">
+                <div>
+                    <div class="w-14 h-14 mx-auto bg-white rounded-full flex items-center justify-center border border-blue-200 text-blue-600 mb-5 shadow-sm text-xl">
+                        <i class="fa-regular fa-clock"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-blue-600">決済スピードの高速化</h3>
+                    <p class="text-base text-slate-700 font-bold mt-4 leading-relaxed">EDI取引から着金までのタイムラグを<br><span class="text-2xl text-blue-600 font-black">「即時・24時間」に</span></p>
+                </div>
+                <div class="bg-blue-50 border border-blue-200 text-blue-600 text-sm font-bold py-2 px-4 rounded-full mt-8 inline-block">
+                    銀行営業時間外でも即時着金・取引を加速
+                </div>
+            </div>
+
+            <div class="bg-amber-50/40 border border-amber-100 rounded-2xl p-8 text-center flex flex-col justify-between shadow-sm">
+                <div>
+                    <div class="w-14 h-14 mx-auto bg-white rounded-full flex items-center justify-center border border-amber-200 text-amber-600 mb-5 shadow-sm text-xl">
+                        <i class="fa-solid fa-arrows-spin"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-amber-600">データ連携・決済の自動化</h3>
+                    <p class="text-base text-slate-700 font-bold mt-4 leading-relaxed">ASTERIA Warpによるノーコード連携で<br><span class="text-2xl text-amber-600 font-black">業務を完全自動化</span></p>
+                </div>
+                <div class="bg-amber-50 border border-amber-200 text-amber-600 text-sm font-bold py-2 px-4 rounded-full mt-8 inline-block">
+                    手作業を排除しバックオフィスの工数を削減
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="grid lg:grid-cols-12 gap-8 mt-28 items-stretch">
+        <div class="lg:col-span-4 border border-gray-200 rounded-2xl p-8 bg-white flex flex-col justify-between shadow-sm">
+            <div>
+            <h3 class="font-bold text-lg border-b border-gray-100 pb-4 mb-6 text-slate-900">抱えていた課題</h3>
+            <ul class="space-y-6 text-base">
+                <li class="flex items-start">
+                <i class="fa-solid fa-circle-check text-primary mt-1 mr-3 flex-shrink-0 text-lg"></i>
+                <div>
+                    <strong class="block text-slate-800 mb-1.5 font-bold">システム分断による手動の振込・消込</strong>
+                    <p class="text-gray-500 leading-relaxed text-sm">EDIで取引データを受信しているものの、決済システムとの自動連携がなく、結局は手動で振込データの作成や入金消込を行っており、経理・購買チームの大きな負担だった。</p>
+                </div>
+                </li>
+                <li class="flex items-start">
+                <i class="fa-solid fa-circle-check text-primary mt-1 mr-3 flex-shrink-0 text-lg"></i>
+                <div>
+                    <strong class="block text-slate-800 mb-1.5 font-bold">取引件数比例で膨らむ銀行振込手数料</strong>
+                    <p class="text-gray-500 leading-relaxed text-sm">サプライヤーや取引先の数が増えるにつれ、毎月発生する銀行の振込手数料が膨大な金額に達しており、B2B取引における隠れたコストセンターになっていた。</p>
+                </div>
+                </li>
+                <li class="flex items-start">
+                <i class="fa-solid fa-circle-check text-primary mt-1 mr-3 flex-shrink-0 text-lg"></i>
+                <div>
+                    <strong class="block text-slate-800 mb-1.5 font-bold">銀行営業時間による決済タイムラグ</strong>
+                    <p class="text-gray-500 leading-relaxed text-sm">夜間や休日を挟む取引の場合、銀行の営業時間外となり即時決済が行えず、サプライヤーへの支払いスピードが制限され、サプライチェーン全体の迅速化を阻む要因となっていた。</p>
+                </div>
+                </li>
+            </ul>
+            </div>
+        </div>
+
+        <div class="lg:col-span-4 border border-gray-200 rounded-2xl p-8 bg-white shadow-sm">
+            <h3 class="font-bold text-lg border-b border-gray-100 pb-4 mb-6 text-slate-900">JPYC Gatewayでの解決フロー</h3>
+            <ol class="space-y-6 text-base">
+            <li class="flex items-start">
+                <span class="w-7 h-7 bg-[#00966c] text-white font-bold flex items-center justify-center rounded-full mr-3 flex-shrink-0 text-sm">1</span>
+                <div>
+                <strong class="block text-slate-800 mb-1.5 font-bold">EDIデータとウォレット情報の紐付け</strong>
+                <p class="text-gray-500 leading-relaxed text-sm">取引先（サプライヤー）のウォレットアドレスを事前に管理。EDIや基幹システムで受領した取引データとシームレスに紐付けを行います。</p>
+                </div>
+            </li>
+            <li class="flex items-start">
+                <span class="w-7 h-7 bg-[#00966c] text-white font-bold flex items-center justify-center rounded-full mr-3 flex-shrink-0 text-sm">2</span>
+                <div>
+                <strong class="block text-slate-800 mb-1.5 font-bold">ASTERIA Warpによるデータ自動連携</strong>
+                <p class="text-gray-500 leading-relaxed text-sm">EDI決済データをASTERIA Warpが自動的にキャッチ。JPYC Gatewayへとデータを引き渡し、手作業を挟まず決済処理を自動化します。</p>              
+                </div>
+            </li>
+            <li class="flex items-start">
+                <span class="w-7 h-7 bg-[#00966c] text-white font-bold flex items-center justify-center rounded-full mr-3 flex-shrink-0 text-sm">3</span>
+                <div>
+                <strong class="block text-slate-800 mb-1.5 font-bold">JPYCによる即時決済と消込自動化</strong>
+                <p class="text-gray-500 leading-relaxed text-sm">JPYC Gatewayを介してステーブルコインが取引先へ即時着金。銀行の営業時間に関わらず決済が完了し、完了データはWarp経由で基幹システムに自動で消込還流されます。</p>
+                </div>
+            </li>
+            </ol>
+        </div>
+
+        <div class="lg:col-span-4 border border-gray-200 rounded-2xl p-8 bg-white flex flex-col shadow-sm">
+            <h3 class="font-bold text-lg border-b border-gray-100 pb-4 mb-6 text-slate-900">劇的な導入効果（比較表）</h3>
+            <div class="text-sm flex-1 flex flex-col justify-between space-y-5">
+            <div class="grid grid-cols-3 gap-2 font-bold text-center items-center">
+                <div class="text-gray-400 text-xs">比較項目</div>
+                <div class="bg-slate-100 text-slate-700 py-2 rounded-lg text-xs leading-tight">導入前</div>
+                <div class="bg-[#00966c] text-white py-2 rounded-lg text-xs leading-tight text-center">導入後</div>
+            </div>
+            <div class="grid grid-cols-3 gap-2 items-center border-b border-gray-50 pb-4">
+                <div class="text-gray-500 font-bold text-xs flex justify-center items-center">
+                    <i class="fa-solid fa-coins mr-1 text-slate-400"></i>送金手数料
+                </div>
+                <div class="text-center text-slate-700 font-medium text-xs leading-tight">数百円〜数千円<br><span class="text-[10px] text-gray-400">(取引件数ごとに発生)</span></div>
+                <div class="text-center text-primary font-bold bg-primary-light/50 py-2 rounded-lg text-xs leading-tight"><strong class="text-sm font-black">8円</strong><br><span class="text-[10px] text-emerald-600 block mt-0.5">(ガス代のみで最適化)</span></div>
+            </div>
+            <div class="grid grid-cols-3 gap-2 items-center border-b border-gray-50 pb-4">
+                <div class="text-gray-500 font-bold text-xs flex justify-center items-center">
+                    <i class="fa-regular fa-clock mr-1 text-slate-400"></i>決済スピード
+                </div>
+                <div class="text-center text-slate-600 text-xs font-bold">数日〜翌月払い<br><span class="text-[10px] text-gray-400 font-normal">(銀行営業時間外は停滞)</span></div>
+                <div class="text-center text-primary font-bold bg-primary-light/50 py-2 rounded-lg text-xs font-black">即時決済<br><span class="text-[10px] text-emerald-600 block mt-0.5">(24時間365日)</span></div>
+            </div>
+            <div class="grid grid-cols-3 gap-2 items-center">
+                <div class="text-gray-500 font-bold text-xs flex justify-center items-center">
+                    <i class="fa-solid fa-arrows-spin mr-1 text-slate-400"></i>業務プロセス
+                </div>
+                <div class="text-center text-slate-600 text-[11px] leading-tight">データ出力、手動でのFB振込作成、銀行営業時間内の対応、手作業の入金消込。</div>
+                <div class="text-center text-primary font-bold bg-primary-light/50 p-2 rounded-lg text-[11px] leading-tight flex justify-center items-center">データ連携から即時決済、基幹への消込まで手作業ゼロ。</div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-28 border-t border-gray-100 pt-16 text-center">
+        <h2 class="text-2xl md:text-3xl font-bold text-slate-900 tracking-tight">企業間取引の決済コストと連携プロセスのあり方を、今すぐ見直しませんか？</h2>
+        <p class="text-lg md:text-xl font-bold text-primary mt-4">ASTERIA Warp ＆ JPYC Gatewayが、これからのB2B決済の高速化とバックオフィス業務の完全自動化を支えます。</p>
+        <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center items-center w-full">
+            <a href="https://www.asteria.com/jp/contact/reqdoc/" class="inline-flex items-center justify-center bg-[#00966c] hover:bg-emerald-700 text-white font-bold text-lg px-8 py-5 rounded-xl shadow-md transition group w-full sm:w-64">
+                <span>資料請求</span>
+                <i class="fa-solid fa-chevron-right text-base transform group-hover:translate-x-1 transition-transform ml-3"></i>
+            </a>
+
+            <a href="https://www.asteria.com/jp/contact/entry/" class="inline-flex items-center justify-center bg-[#00966c] hover:bg-emerald-700 text-white font-bold text-lg px-8 py-5 rounded-xl shadow-md transition group w-full sm:w-64">
+                <span>お問い合わせ</span>
+                <i class="fa-solid fa-chevron-right text-base transform group-hover:translate-x-1 transition-transform ml-3"></i>
+            </a>
+        </div>
+    </div>
+  </main>
+
+  <footer class="bg-navy pt-24 pb-12 text-white/90 border-t border-white/10">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row justify-between gap-20 mb-20">
+                <div class="max-w-xs">
+                    <div class="flex items-center">
+                         <a href="#">
+                             <img src="img/logo_white.svg" alt="JPYC Gateway" class="h-12 md:h-16 w-auto">
+                        </a>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-12">
+                    <div class="space-y-4">
+                        <p class="font-black text-white text-xs tracking-widest">PRODUCT</p>
+                        <ul class="space-y-3 text-sm font-bold text-slate-400">
+                            <li><a href="features" class="hover:text-brand-green transition">機能一覧</a></li>
+                            <li><a href="#integration" class="hover:text-brand-green transition">連携システム</a></li>
+                        </ul>
+                    </div>
+                    <div class="space-y-4">
+                        <p class="font-black text-white text-xs tracking-widest">RESOURCES</p>
+                        <ul class="space-y-3 text-sm font-bold text-slate-400">
+                            <li><a href="https://jpycgateway.com/blog.html" class="hover:text-brand-green transition">ブログ</a></li>
+                            <li><a href="#" class="hover:text-brand-green transition">ユースケース</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row justify-between items-center text-[10px] font-bold text-slate-500 gap-4 pt-8 border-t border-white/5">
+                <p>&copy; 1998-2026 Asteria Corporation. All Rights reserved.</p>
+                <div class="flex gap-8">
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="hover:text-white transition">利用規約</a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="hover:text-white transition">サポート規約</a>
+                    <a href="https://www.asteria.com/jp/privacy/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition">プライバシーポリシー</a>
+                    <a href="https://jp.asteria.com/company/profile/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition">会社概要</a>
+                    <a href="https://www.asteria.com/jp/terms/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition">アステリア製品共通利用規約</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
