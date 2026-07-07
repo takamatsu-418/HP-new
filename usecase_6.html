@@ -89,11 +89,15 @@
     
     <div class="grid md:grid-cols-12 gap-10 items-center">
         <div class="md:col-span-8">
-            <h1 class="text-4xl md:text-6xl font-black text-slate-950 leading-tight">EDI取引の送金コストと<br>タイムラグを大幅削減</h1>
-            <p class="text-2xl md:text-3xl font-bold text-slate-700 mt-6">B2B取引・購買業務を展開する企業のユースケース</p>
-            <p class="text-base md:text-xl text-gray-600 leading-relaxed mt-6 max-w-3xl">従来の企業間取引（EDI）における銀行振込では、支払・着金確認のタイムラグや、大量の取引に伴う振込手数料が課題となっていました。データ連携からステーブルコインによる即時決済までの一連のプロセスを自動化し、取引の高速化とコストの劇的な削減を実現します。</p>
+            <h1 class="text-4xl md:text-6xl font-black text-slate-950 leading-tight">
+                スポットワークの給与送金<br>手数料を「1回8円」へ
+            </h1>
+            <p class="text-2xl md:text-3xl font-bold text-slate-700 mt-6">短時間・高頻度の「働いたらすぐ貰える」を低コストで</p>
+            <p class="text-base md:text-xl text-gray-600 leading-relaxed mt-6 max-w-3xl">
+                単発・短時間のスポットワークでは、勤務の都度給与を振り込む際の「多額の銀行振込手数料」が事業者の大きな負担となっていました。送金手数料を1回あたり一律8円に抑えることで、コストを気にせず「働いたその瞬間に給与を渡す」リアルタイム払いが可能に。ワーカーのエンゲージメント向上と、他社との差別化を両立します。
+            </p>
         </div>
-        <img src="img/usecase/usecase_5.png" alt="EDIとJPYC Gatewayの連携イメージ" class="md:col-span-4 w-full h-auto rounded-2xl border border-gray-100 shadow-sm">
+        <img src="img/usecase/usecase_5.png" alt="スポットワーク給与支払いとJPYC Gatewayの連携イメージ" class="md:col-span-4 w-full h-auto rounded-2xl border border-gray-100 shadow-sm">
     </div>
 
     <section class="mt-24">
@@ -102,34 +106,34 @@
         <div class="flex flex-col lg:flex-row items-center justify-between gap-4 relative"> 
             <div class="w-full lg:w-[47%] bg-[#f7f9fa] border border-[#eef1f2] rounded-2xl p-6 shadow-sm flex flex-col justify-between min-h-[380px]">
                 <div class="bg-[#59606d] text-white text-center text-base font-bold py-3.5 px-4 rounded-xl tracking-wide mb-8">
-                    導入前：システムが分断された手作業の銀行振込
+                    導入前：コスト負担により「月1回払い」に制限
                 </div>
                 <div class="flex items-center justify-between text-center font-bold text-[#11224d] px-2 mb-10">
                     <div class="flex flex-col items-center w-24">
                         <i class="fa-solid fa-building text-4xl text-[#59606d]/80 mb-2"></i>
-                        <span class="text-xs leading-tight">EDI/基幹システム<br><span class="text-[11px] text-gray-500 font-normal">(連携がなく孤立)</span></span>
+                        <span class="text-xs leading-tight">働いた時間<br><span class="text-[11px] text-gray-500 font-normal">(都度払いは困難)</span></span>
                     </div>
                     <i class="fa-solid fa-arrow-right text-gray-300 text-sm"></i>
                     <div class="flex flex-col items-center w-24">
                         <i class="fa-solid fa-bank text-4xl text-[#59606d]/80 mb-2"></i>
-                        <span class="text-xs leading-tight">手動でのFB振込<br><span class="text-[11px] text-gray-500 font-normal">(都度の手数料)</span></span>
+                        <span class="text-xs leading-tight">月に1度の集計<br><span class="text-[11px] text-gray-500 font-normal">(銀行振込)</span></span>
                     </div>
                     <i class="fa-solid fa-arrow-right text-gray-300 text-sm"></i>
                     <div class="flex flex-col items-center w-24">
-                        <i class="fa-solid fa-truck text-4xl text-[#59606d]/80 mb-2"></i>
-                        <span class="text-xs leading-tight">取引先<br><span class="text-[11px] text-gray-500 font-normal">(着金確認のラグ)</span></span>
+                        <i class="fa-solid fa-user text-4xl text-[#59606d]/80 mb-2"></i>
+                        <span class="text-xs leading-tight">ワーカー<br><span class="text-[11px] text-gray-500 font-normal">(給与支払い待ち)</span></span>
                     </div>
                 </div>
                 <div class="grid grid-cols-2 gap-4 mt-auto">
                     <div class="bg-white p-5 rounded-2xl text-center border border-gray-100 shadow-sm flex flex-col justify-center">
-                        <span class="text-sm text-gray-500 font-bold block mb-1">決済・送金コスト</span>
-                        <span class="text-[17px] font-black text-[#11224d] tracking-tight">数百円〜数千円 / 件</span>
-                        <span class="text-[11px] text-gray-400 block mt-1">(取引件数に応じた高い振込手数料)</span>
+                        <span class="text-sm text-gray-500 font-bold block mb-1">給与送金コスト</span>
+                        <span class="text-[17px] font-black text-[#11224d] tracking-tight">数百円 / 回</span>
+                        <span class="text-[11px] text-gray-400 block mt-1">(都度払いをすると手数料が莫大に)</span>
                     </div>
                     <div class="bg-white p-5 rounded-2xl text-center border border-gray-100 shadow-sm flex flex-col justify-center">
-                        <span class="text-sm text-gray-500 font-bold block mb-1">データ連携・決済サイクル</span>
-                        <span class="text-[17px] font-black text-[#11224d] tracking-tight">手作業によるタイムラグ</span>
-                        <span class="text-[11px] text-gray-400 block mt-1">(データの出力・二重入力の手間)</span>
+                        <span class="text-sm text-gray-500 font-bold block mb-1">支払サイクル・訴求力</span>
+                        <span class="text-[17px] font-black text-[#11224d] tracking-tight">月1回払い（通常）</span>
+                        <span class="text-[11px] text-gray-400 block mt-1">(「すぐ貰える」を打ち出せない)</span>
                     </div>
                 </div>
             </div>
@@ -140,12 +144,12 @@
 
             <div class="w-full lg:w-[47%] bg-[#f2fbf7] border border-[#d6f2e6] rounded-2xl p-6 shadow-sm flex flex-col justify-between min-h-[380px]">
                 <div class="bg-[#00966c] text-white text-center text-base font-bold py-3.5 px-4 rounded-xl tracking-wide mb-8">
-                    導入後：JPYC Gateway × ASTERIA Warpによる自動即時決済
+                    導入後：JPYC Gatewayによる「働いたらその場で都度払い」
                 </div>
                 <div class="flex items-center justify-between text-center font-bold text-[#11224d] px-4 mb-10">
                     <div class="flex flex-col items-center w-24">
-                        <i class="fa-solid fa-network-wired text-4xl text-[#11224d]/80 mb-2"></i>
-                        <span class="text-xs leading-tight">EDI ⇄ システム<br><span class="text-[11px] text-[#00966c] font-bold">(ノーコード連携)</span></span>
+                        <i class="fa-solid fa-clock-rotate-left text-4xl text-[#11224d]/80 mb-2"></i>
+                        <span class="text-xs leading-tight">勤務終了<br><span class="text-[11px] text-[#00966c] font-bold">(データ自動連携)</span></span>
                     </div>
                     <i class="fa-solid fa-arrow-right text-[#00966c] text-sm"></i>
                     
@@ -155,20 +159,20 @@
                     
                     <i class="fa-solid fa-arrow-right text-[#00966c] text-sm"></i>
                     <div class="flex flex-col items-center w-24">
-                        <i class="fa-solid fa-truck text-4xl text-[#11224d]/80 mb-2"></i>
-                        <span class="text-xs leading-tight">取引先<br><span class="text-[11px] text-[#00966c] font-bold">(自動消込)</span></span>
+                        <i class="fa-solid fa-user text-4xl text-[#11224d]/80 mb-2"></i>
+                        <span class="text-xs leading-tight">ワーカー<br><span class="text-[11px] text-[#00966c] font-bold">(リアルタイム着金)</span></span>
                     </div>
                 </div>
                 <div class="grid grid-cols-2 gap-4 mt-auto">
                     <div class="bg-white p-5 rounded-2xl text-center border border-[#d6f2e6] shadow-sm flex flex-col justify-center">
-                        <span class="text-sm text-[#00966c] font-extrabold block mb-1">決済・送金コスト</span>
-                        <span class="text-[21px] font-black text-[#00966c] tracking-tight">大幅削減</span>
-                        <span class="text-[11px] text-[#00966c]/80 block mt-1 leading-normal">ステーブルコインで送金コストを最適化</span>
+                        <span class="text-sm text-[#00966c] font-extrabold block mb-1">給与送金コスト</span>
+                        <span class="text-[21px] font-black text-[#00966c] tracking-tight">1回 一律 8円</span>
+                        <span class="text-[11px] text-[#00966c]/80 block mt-1 leading-normal">回数を気にせず何度でも送金可能</span>
                     </div>
                     <div class="bg-white p-5 rounded-2xl text-center border border-[#d6f2e6] shadow-sm flex flex-col justify-center">
-                        <span class="text-sm text-[#00966c] font-extrabold block mb-1">データ連携・決済サイクル</span>
-                        <span class="text-[21px] font-black text-[#00966c] tracking-tight">完全自動・即時</span>
-                        <span class="text-[11px] text-[#00966c]/80 block mt-1 leading-normal">ASTERIA Warpで自動処理</span>
+                        <span class="text-sm text-[#00966c] font-extrabold block mb-1">支払サイクル・訴求力</span>
+                        <span class="text-[21px] font-black text-[#00966c] tracking-tight">即時都度払い</span>
+                        <span class="text-[11px] text-[#00966c]/80 block mt-1 leading-normal">「働いてすぐ貰える」で採用力大幅UP</span>
                     </div>
                 </div>
             </div>
@@ -181,14 +185,17 @@
             
             <div class="bg-emerald-50/40 border border-emerald-100 rounded-2xl p-8 text-center flex flex-col justify-between shadow-sm">
                 <div>
-                    <div class="w-14 h-14 mx-auto bg-white rounded-full flex items-center justify-center border border-emerald-200 text-primary mb-5 shadow-sm text-xl">
+                    <div class="w-14 h-14 mx-auto bg-white rounded-full flex items-center justify-center border border-emerald-200 text-emerald-600 mb-5 shadow-sm text-xl">
                         <i class="fa-solid fa-coins"></i>
                     </div>
-                    <h3 class="font-bold text-lg text-primary">決済コストの削減</h3>
-                    <p class="text-base text-slate-700 font-bold mt-4 leading-relaxed">大量に発生する企業間決済の振込手数料を<br><span class="text-2xl text-primary font-black">劇的に引き下げ</span></p>
+                    <h3 class="font-bold text-lg text-emerald-600">給与送金コストの削減</h3>
+                    <p class="text-base text-slate-700 font-bold mt-4 leading-relaxed">
+                        高頻度で発生する給与振込の手数料を<br>
+                        <span class="text-2xl text-emerald-600 font-black">1回一律8円に激減</span>
+                    </p>
                 </div>
-                <div class="bg-emerald-50 border border-emerald-200 text-primary text-sm font-bold py-2 px-4 rounded-full mt-8 inline-block">
-                    ステーブルコイン活用による手数料の最適化
+                <div class="bg-emerald-50 border border-emerald-200 text-emerald-600 text-sm font-bold py-2 px-4 rounded-full mt-8 inline-block">
+                    回数を気にせず何度でも都度払いが可能に
                 </div>
             </div>
 
@@ -197,24 +204,30 @@
                     <div class="w-14 h-14 mx-auto bg-white rounded-full flex items-center justify-center border border-blue-200 text-blue-600 mb-5 shadow-sm text-xl">
                         <i class="fa-regular fa-clock"></i>
                     </div>
-                    <h3 class="font-bold text-lg text-blue-600">決済スピードの高速化</h3>
-                    <p class="text-base text-slate-700 font-bold mt-4 leading-relaxed">EDI取引から着金までのタイムラグを<br><span class="text-2xl text-blue-600 font-black">「即時・24時間」に</span></p>
+                    <h3 class="font-bold text-lg text-blue-600">24時間リアルタイム着金</h3>
+                    <p class="text-base text-slate-700 font-bold mt-4 leading-relaxed">
+                        勤務終了からワーカーの手元に届くまで<br>
+                        <span class="text-2xl text-blue-600 font-black">「即時・いつでも」</span>
+                    </p>
                 </div>
                 <div class="bg-blue-50 border border-blue-200 text-blue-600 text-sm font-bold py-2 px-4 rounded-full mt-8 inline-block">
-                    銀行営業時間外でも即時着金・取引を加速
+                    夜間や土日祝日でも関係なく即時支払い
                 </div>
             </div>
 
             <div class="bg-amber-50/40 border border-amber-100 rounded-2xl p-8 text-center flex flex-col justify-between shadow-sm">
                 <div>
                     <div class="w-14 h-14 mx-auto bg-white rounded-full flex items-center justify-center border border-amber-200 text-amber-600 mb-5 shadow-sm text-xl">
-                        <i class="fa-solid fa-arrows-spin"></i>
+                        <i class="fa-solid fa-user-plus"></i>
                     </div>
-                    <h3 class="font-bold text-lg text-amber-600">データ連携・決済の自動化</h3>
-                    <p class="text-base text-slate-700 font-bold mt-4 leading-relaxed">ASTERIA Warpによるノーコード連携で<br><span class="text-2xl text-amber-600 font-black">業務を完全自動化</span></p>
+                    <h3 class="font-bold text-lg text-amber-600">求人訴求力・採用力の向上</h3>
+                    <p class="text-base text-slate-700 font-bold mt-4 leading-relaxed">
+                        「働いたらその場で貰える」を武器に<br>
+                        <span class="text-2xl text-amber-600 font-black">ワーカー応募数を拡大</span>
+                    </p>
                 </div>
                 <div class="bg-amber-50 border border-amber-200 text-amber-600 text-sm font-bold py-2 px-4 rounded-full mt-8 inline-block">
-                    手作業を排除しバックオフィスの工数を削減
+                    競合他社との強力な差別化メリット
                 </div>
             </div>
 
@@ -224,96 +237,128 @@
     <div class="grid lg:grid-cols-12 gap-8 mt-28 items-stretch">
         <div class="lg:col-span-4 border border-gray-200 rounded-2xl p-8 bg-white flex flex-col justify-between shadow-sm">
             <div>
-            <h3 class="font-bold text-lg border-b border-gray-100 pb-4 mb-6 text-slate-900">抱えていた課題</h3>
-            <ul class="space-y-6 text-base">
-                <li class="flex items-start">
-                <i class="fa-solid fa-circle-check text-primary mt-1 mr-3 flex-shrink-0 text-lg"></i>
-                <div>
-                    <strong class="block text-slate-800 mb-1.5 font-bold">システム分断による手動の振込・消込</strong>
-                    <p class="text-gray-500 leading-relaxed text-sm">EDIで取引データを受信しているものの、決済システムとの自動連携がなく、結局は手動で振込データの作成や入金消込を行っており、経理・購買チームの大きな負担だった。</p>
-                </div>
-                </li>
-                <li class="flex items-start">
-                <i class="fa-solid fa-circle-check text-primary mt-1 mr-3 flex-shrink-0 text-lg"></i>
-                <div>
-                    <strong class="block text-slate-800 mb-1.5 font-bold">取引件数比例で膨らむ銀行振込手数料</strong>
-                    <p class="text-gray-500 leading-relaxed text-sm">サプライヤーや取引先の数が増えるにつれ、毎月発生する銀行の振込手数料が膨大な金額に達しており、B2B取引における隠れたコストセンターになっていた。</p>
-                </div>
-                </li>
-                <li class="flex items-start">
-                <i class="fa-solid fa-circle-check text-primary mt-1 mr-3 flex-shrink-0 text-lg"></i>
-                <div>
-                    <strong class="block text-slate-800 mb-1.5 font-bold">銀行営業時間による決済タイムラグ</strong>
-                    <p class="text-gray-500 leading-relaxed text-sm">夜間や休日を挟む取引の場合、銀行の営業時間外となり即時決済が行えず、サプライヤーへの支払いスピードが制限され、サプライチェーン全体の迅速化を阻む要因となっていた。</p>
-                </div>
-                </li>
-            </ul>
+                <h3 class="font-bold text-lg border-b border-gray-100 pb-4 mb-6 text-slate-900">抱えていた課題</h3>
+                <ul class="space-y-6 text-base">
+                    <li class="flex items-start">
+                        <i class="fa-solid fa-circle-exclamation text-amber-500 mt-1 mr-3 flex-shrink-0 text-lg"></i>
+                        <div>
+                            <strong class="block text-slate-800 mb-1.5 font-bold">手数料の負担により「月1回払い」に</strong>
+                            <p class="text-gray-500 leading-relaxed text-sm">「働いたらすぐ貰える」都度払いを導入したいものの、短時間・高頻度で働くスポットワークの特性上、銀行の手数料負担が大きく、月1回払いにせざるを得なかった。</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fa-solid fa-circle-exclamation text-amber-500 mt-1 mr-3 flex-shrink-0 text-lg"></i>
+                        <div>
+                            <strong class="block text-slate-800 mb-1.5 font-bold">稼働件数に比例して膨らむ振込コスト</strong>
+                            <p class="text-gray-500 leading-relaxed text-sm">
+                                事業の成長に伴って登録ワーカー数が増えれば増えるほど、毎月発生する銀行への振込手数料が膨大な金額に達し、ビジネスの利益率を圧迫するコストセンターになっていた。
+                            </p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fa-solid fa-circle-exclamation text-amber-500 mt-1 mr-3 flex-shrink-0 text-lg"></i>
+                        <div>
+                            <strong class="block text-slate-800 mb-1.5 font-bold">夜間・休日を挟む支払いのタイムラグ</strong>
+                            <p class="text-gray-500 leading-relaxed text-sm">
+                                週末や夜間のシフトが多いスポットワークにおいて、銀行の営業時間外になると即時着金が制限されるケースがあり、「今すぐお金が欲しい」というワーカーのニーズに100%応えきれず、他社との差別化に苦戦していた。
+                            </p>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
 
         <div class="lg:col-span-4 border border-gray-200 rounded-2xl p-8 bg-white shadow-sm">
             <h3 class="font-bold text-lg border-b border-gray-100 pb-4 mb-6 text-slate-900">JPYC Gatewayでの解決フロー</h3>
             <ol class="space-y-6 text-base">
-            <li class="flex items-start">
-                <span class="w-7 h-7 bg-[#00966c] text-white font-bold flex items-center justify-center rounded-full mr-3 flex-shrink-0 text-sm">1</span>
-                <div>
-                <strong class="block text-slate-800 mb-1.5 font-bold">EDIデータとウォレット情報の紐付け</strong>
-                <p class="text-gray-500 leading-relaxed text-sm">取引先（サプライヤー）のウォレットアドレスを事前に管理。EDIや基幹システムで受領した取引データとシームレスに紐付けを行います。</p>
-                </div>
-            </li>
-            <li class="flex items-start">
-                <span class="w-7 h-7 bg-[#00966c] text-white font-bold flex items-center justify-center rounded-full mr-3 flex-shrink-0 text-sm">2</span>
-                <div>
-                <strong class="block text-slate-800 mb-1.5 font-bold">ASTERIA Warpによるデータ自動連携</strong>
-                <p class="text-gray-500 leading-relaxed text-sm">EDI決済データをASTERIA Warpが自動的にキャッチ。JPYC Gatewayへとデータを引き渡し、手作業を挟まず決済処理を自動化します。</p>              
-                </div>
-            </li>
-            <li class="flex items-start">
-                <span class="w-7 h-7 bg-[#00966c] text-white font-bold flex items-center justify-center rounded-full mr-3 flex-shrink-0 text-sm">3</span>
-                <div>
-                <strong class="block text-slate-800 mb-1.5 font-bold">JPYCによる即時決済と消込自動化</strong>
-                <p class="text-gray-500 leading-relaxed text-sm">JPYC Gatewayを介してステーブルコインが取引先へ即時着金。銀行の営業時間に関わらず決済が完了し、完了データはWarp経由で基幹システムに自動で消込還流されます。</p>
-                </div>
-            </li>
+                <li class="flex items-start">
+                    <span class="w-7 h-7 bg-[#00966c] text-white font-bold flex items-center justify-center rounded-full mr-3 flex-shrink-0 text-sm">1</span>
+                    <div>
+                        <strong class="block text-slate-800 mb-1.5 font-bold">ワーカー情報とウォレットの紐付け</strong>
+                        <p class="text-gray-500 leading-relaxed text-sm">
+                            登録ワーカーの受取用ウォレットアドレスを事前に管理。スポットワークの会員データやアプリのアカウントとシームレスに紐付けを行います。
+                        </p>
+                    </div>
+                </li>
+                <li class="flex items-start">
+                    <span class="w-7 h-7 bg-[#00966c] text-white font-bold flex items-center justify-center rounded-full mr-3 flex-shrink-0 text-sm">2</span>
+                    <div>
+                        <strong class="block text-slate-800 mb-1.5 font-bold">勤務終了データの自動連携</strong>
+                        <p class="text-gray-500 leading-relaxed text-sm">
+                            ワーカーが勤務を終了し、システム上で実績が確定されると、その給与計算データが自動でJPYC Gatewayへとシームレスに引き渡されます。
+                        </p>               
+                    </div>
+                </li>
+                <li class="flex items-start">
+                    <span class="w-7 h-7 bg-[#00966c] text-white font-bold flex items-center justify-center rounded-full mr-3 flex-shrink-0 text-sm">3</span>
+                    <div>
+                        <strong class="block text-slate-800 mb-1.5 font-bold">1回8円で即時着金、都度払いを実現</strong>
+                        <p class="text-gray-500 leading-relaxed text-sm">
+                            JPYC Gatewayを介して、1回あたり一律8円という極少コストでワーカーへ即時送金。銀行の営業時間に関わらず、働いたその場での「リアルタイム都度払い」が完了します。
+                        </p>
+                    </div>
+                </li>
             </ol>
         </div>
 
         <div class="lg:col-span-4 border border-gray-200 rounded-2xl p-8 bg-white flex flex-col shadow-sm">
             <h3 class="font-bold text-lg border-b border-gray-100 pb-4 mb-6 text-slate-900">劇的な導入効果（比較表）</h3>
             <div class="text-sm flex-1 flex flex-col justify-between space-y-5">
-            <div class="grid grid-cols-3 gap-2 font-bold text-center items-center">
-                <div class="text-gray-400 text-xs">比較項目</div>
-                <div class="bg-slate-100 text-slate-700 py-2 rounded-lg text-xs leading-tight">導入前</div>
-                <div class="bg-[#00966c] text-white py-2 rounded-lg text-xs leading-tight text-center">導入後</div>
-            </div>
-            <div class="grid grid-cols-3 gap-2 items-center border-b border-gray-50 pb-4">
-                <div class="text-gray-500 font-bold text-xs flex justify-center items-center">
-                    <i class="fa-solid fa-coins mr-1 text-slate-400"></i>送金手数料
+                
+                <div class="grid grid-cols-3 gap-2 font-bold text-center items-center">
+                    <div class="text-gray-400 text-xs">比較項目</div>
+                    <div class="bg-slate-100 text-slate-700 py-2 rounded-lg text-xs leading-tight">導入前</div>
+                    <div class="bg-[#00966c] text-white py-2 rounded-lg text-xs leading-tight text-center">導入後</div>
                 </div>
-                <div class="text-center text-slate-700 font-medium text-xs leading-tight">数百円〜数千円<br><span class="text-[10px] text-gray-400">(取引件数ごとに発生)</span></div>
-                <div class="text-center text-primary font-bold bg-primary-light/50 py-2 rounded-lg text-xs leading-tight"><strong class="text-sm font-black">8円</strong><br><span class="text-[10px] text-emerald-600 block mt-0.5">(ガス代のみで最適化)</span></div>
-            </div>
-            <div class="grid grid-cols-3 gap-2 items-center border-b border-gray-50 pb-4">
-                <div class="text-gray-500 font-bold text-xs flex justify-center items-center">
-                    <i class="fa-regular fa-clock mr-1 text-slate-400"></i>決済スピード
+                
+                <div class="grid grid-cols-3 gap-2 items-center border-b border-gray-50 pb-4">
+                    <div class="text-gray-500 font-bold text-xs flex justify-center items-center">
+                        <i class="fa-solid fa-coins mr-1 text-slate-400"></i>送金手数料
+                    </div>
+                    <div class="text-center text-slate-700 font-medium text-xs leading-tight">
+                        数百円 / 回<br>
+                        <span class="text-[10px] text-gray-400">(都度払いだと莫大に)</span>
+                    </div>
+                    <div class="text-center text-emerald-600 font-bold bg-emerald-50 py-2 rounded-lg text-xs leading-tight">
+                        <strong class="text-sm font-black">一律 8円</strong><br>
+                        <span class="text-[10px] text-emerald-600 block mt-0.5">(回数を気にせず送金)</span>
+                    </div>
                 </div>
-                <div class="text-center text-slate-600 text-xs font-bold">数日〜翌月払い<br></div>
-                <div class="text-center text-primary font-bold bg-primary-light/50 py-2 rounded-lg text-xs font-black">即時決済<br><span class="text-[10px] text-emerald-600 block mt-0.5">(24時間365日)</span></div>
-            </div>
-            <div class="grid grid-cols-3 gap-2 items-center">
-                <div class="text-gray-500 font-bold text-xs flex justify-center items-center">
-                    <i class="fa-solid fa-arrows-spin mr-1 text-slate-400"></i>業務プロセス
+                
+                <div class="grid grid-cols-3 gap-2 items-center border-b border-gray-50 pb-4">
+                    <div class="text-gray-500 font-bold text-xs flex justify-center items-center">
+                        <i class="fa-regular fa-clock mr-1 text-slate-400"></i>支払サイクル
+                    </div>
+                    <div class="text-center text-slate-600 text-xs font-bold">
+                        月1回払い<br>
+                        <span class="text-[10px] text-gray-400">(月末締め・翌月払)</span>
+                    </div>
+                    <div class="text-center text-emerald-600 font-bold bg-emerald-50 py-2 rounded-lg text-xs font-black">
+                        即時都度払い<br>
+                        <span class="text-[10px] text-emerald-600 block mt-0.5">(24時間365日着金)</span>
+                    </div>
                 </div>
-                <div class="text-center text-slate-600 text-[11px] leading-tight">データ出力、手動でのFB振込作成、銀行営業時間内の対応、手作業の入金消込。</div>
-                <div class="text-center text-primary font-bold bg-primary-light/50 p-2 rounded-lg text-[11px] leading-tight flex justify-center items-center">データ連携から即時決済、基幹への消込まで手作業ゼロ。</div>
-            </div>
+                
+                <div class="grid grid-cols-3 gap-2 items-center">
+                    <div class="text-gray-500 font-bold text-xs flex justify-center items-center">
+                        <i class="fa-solid fa-user-plus mr-1 text-slate-400"></i>求人訴求力
+                    </div>
+                    <div class="text-center text-slate-600 text-[11px] leading-tight">
+                        「月払い」のため競合との差別化が難しく、ワーカーの集客力に限界。
+                    </div>
+                    <div class="text-center text-emerald-600 font-bold bg-emerald-50 p-2 rounded-lg text-[11px] leading-tight flex flex-col justify-center items-center">
+                        <strong class="font-bold">採用力が大幅UP</strong>
+                        <span class="text-[10px] text-emerald-600 block mt-0.5">「すぐ貰える」が強力な武器に</span>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
 
     <div class="mt-28 border-t border-gray-100 pt-16 text-center">
-        <h2 class="text-2xl md:text-3xl font-bold text-slate-900 tracking-tight">企業間取引の決済コストと連携プロセスのあり方を、今すぐ見直しませんか？</h2>
-        <p class="text-lg md:text-xl font-bold text-primary mt-4">ASTERIA Warp ＆ JPYC Gatewayが、これからのB2B決済の高速化とバックオフィス業務の完全自動化を支えます。</p>
+        <h2 class="text-2xl md:text-3xl font-bold text-slate-900 tracking-tight">莫大な給与送金コストと支払サイクルのあり方を、今すぐ見直しませんか？</h2>
+        <p class="text-lg md:text-xl font-bold text-primary mt-4">JPYC Gatewayが、スポットワークビジネスの「1回8円の即時都度払い」を実現し、圧倒的な採用力とコスト削減を支えます。</p>
         <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center items-center w-full">
             <a href="https://www.asteria.com/jp/contact/reqdoc/" class="inline-flex items-center justify-center bg-[#00966c] hover:bg-emerald-700 text-white font-bold text-lg px-8 py-5 rounded-xl shadow-md transition group w-full sm:w-64">
                 <span>資料請求</span>
