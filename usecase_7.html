@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="ja" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JPYC Gateway | ユースケース</title>
+    <link rel="icon" href="img/logo_noname.png" type="image/png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            green: '#00bb59',
+                            blue: '#0067ff',
+                        },
+                        navy: '#0F172A',
+                    },
+                    fontFamily: {
+                        sans: ['"Inter"', '"Noto Sans JP"', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body { font-family: "Inter", "Noto Sans JP", sans-serif; color: #1E293B; background-color: #FFFFFF; }
+        .btn-brand { 
+            background-color: #00bb59;
+            color: white; 
+            transition: all 0.3s ease; 
+            font-weight: 700;
+        }
+        .btn-brand:hover { background-color: #00bb59; transform: translateY(-2px); }
+        .text-gradient {
+            background: linear-gradient(135deg, #00bb59 0%, #0067ff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .card-shadow {
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            transition: all 0.5s ease-out;
+        }
+        .card-shadow:hover { transform: translateY(-5px); }
+        
+        @keyframes sweep {
+            0% { opacity: 0; transform: translateY(-10px); }
+            100% { opacity: 1; transform: translateY(0); }
+}
+    </style>
+</head>
+<body class="antialiased">
+
+    <header class="fixed w-full z-50 bg-white border-b border-slate-100">
+        <div class="container mx-auto px-6 h-24 flex items-center justify-between">
+            <div class="flex items-center gap-10">
+                <div class="flex items-center">
+                    <a href="#">
+                        <img src="img/logo.png" alt="JPYC Gateway" class="h-8 md:h-10 w-auto">
+                    </a>
+                </div>
+                <nav class="hidden lg:flex items-center gap-4 xl:gap-8 text-sm xl:text-[15px] font-bold text-navy">
+                    <a href="#features" class="hover:text-brand-green transition">機能</a>
+                    <a href="#pricing" class="hover:text-brand-green transition">料金</a>
+                    <a href="#faq" class="hover:text-brand-green transition">FAQ</a>
+                    <a href="https://jpycgateway.com/blog.html" class="hover:text-brand-green transition">ブログ</a>
+                    <a href="https://jpycgateway.com/blog.html" class="text-brand-green transition">ユースケース</a>
+                </nav>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="https://www.asteria.com/jp/contact/entry/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-10 py-4 bg-gradient-to-r from-brand-green to-[#2BC068] text-white rounded-full text-sm font-bold tracking-[0.1em] shadow-[0_10px_20px_-10px_rgba(36,175,88,0.4)] hover:shadow-[0_15px_30px_-10px_rgba(36,175,88,0.6)] hover:-translate-y-1 active:scale-95 transition-all duration-500 group"><span class="relative">お問合せ</span><i class="fas fa-arrow-right ml-3 text-xs transition-transform duration-300 group-hover:translate-x-1"></i></a>
+            </div>
+        </div>
+    </header>
+
+  <div class="max-w-7xl mx-auto px-6 pt-6 text-sm text-gray-400 flex items-center space-x-2">
+    <span>ホーム</span><span>&gt;</span><span>ユースケース</span><span>&gt;</span><span class="text-gray-600">決済代行サービスにステーブルコイン決済を</span>
+  </div>
+
+  <main class="max-w-7xl mx-auto px-6 py-12">
+    <div class="inline-block bg-primary text-white text-sm font-bold px-4 py-1.5 rounded mb-6">
+      ユースケース
+    </div>
+    
+    <div class="grid md:grid-cols-12 gap-10 items-center">
+        <div class="md:col-span-8">
+            <h1 class="text-4xl md:text-6xl font-black text-slate-950 leading-tight">決済代行サービスに<br>ステーブルコイン決済を</h1>
+            <p class="text-2xl md:text-3xl font-bold text-slate-700 mt-6">技術・リスク面の課題をクリアし、新たな成長領域へ</p>
+            <p class="text-base md:text-xl text-gray-600 leading-relaxed mt-6 max-w-3xl">
+                加盟店からのステーブルコイン決済ニーズが高まる中、ブロックチェーン対応や法的なリスク管理は大きな障壁となっています。決済インフラとして「JPYC Gateway」を組み込むことで、貴社の既存サービスにJPYC決済を追加可能に。コストを抑えながら、次世代の決済手段をラインナップに加え、競合他社との差別化を実現します。
+            </p>
+        </div>
+        <img src="img/usecase/usecase_7.png" alt="決済代行インフラとJPYC Gatewayの連携イメージ" class="md:col-span-4 w-full h-auto rounded-2xl border border-gray-100 shadow-sm">
+    </div>
+
+    <section class="mt-24">
+        <h2 class="text-[28px] font-extrabold text-center text-[#11224d] mb-12 tracking-tight">導入前と導入後のインフラ比較</h2>
+        
+        <div class="flex flex-col lg:flex-row items-stretch justify-between gap-8 relative"> 
+            
+            <div class="w-full lg:w-[48%] bg-[#f7f9fa] border border-[#eef1f2] rounded-2xl p-8 shadow-sm flex flex-col justify-between">
+                <div>
+                    <div class="bg-[#59606d] text-white text-center text-base font-bold py-3 px-4 rounded-xl tracking-wide mb-8">
+                        導入前：技術・法規制の壁による「機会損失」
+                    </div>
+                    
+                    <div class="space-y-4 font-bold text-[#11224d]">
+                        <div class="bg-white p-4 rounded-xl border border-gray-100 flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center text-gray-500 text-xl">
+                                <i class="fa-solid fa-store"></i>
+                            </div>
+                            <div class="flex-1">
+                                <p class="text-sm text-slate-950">加盟店（EC・店舗）</p>
+                                <p class="text-[11px] text-gray-500 font-normal mt-0.5">「ステーブルコイン決済を導入したい」</p>
+                            </div>
+                            <span class="text-xs bg-amber-50 text-amber-700 px-2 py-1 rounded border border-amber-200">需要あり</span>
+                        </div>
+
+                        <div class="text-center text-gray-300 my-1">
+                            <i class="fa-solid fa-arrow-down text-lg"></i>
+                        </div>
+
+                        <div class="bg-red-50/50 p-4 rounded-xl border border-red-100 flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-full bg-red-100 flex items-center justify-center text-red-600 text-xl">
+                                <i class="fa-solid fa-triangle-exclamation"></i>
+                            </div>
+                            <div class="flex-1">
+                                <p class="text-sm text-red-950">貴社（決済代行サービス）</p>
+                                <p class="text-[11px] text-red-700 font-normal mt-0.5">Web3人材不足 / カストディ規制 / ノード構築困難</p>
+                            </div>
+                            <span class="text-xs bg-red-600 text-white px-2 py-1 rounded font-black">対応不可</span>
+                        </div>
+
+                        <div class="text-center text-gray-200 my-1 line-through">
+                            <i class="fa-solid fa-arrow-down text-lg"></i>
+                        </div>
+
+                        <div class="bg-gray-100 p-4 rounded-xl border border-gray-200 opacity-60 flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-full bg-gray-200 flex items-center justify-center text-gray-400 text-xl">
+                                <i class="fa-solid fa-coins"></i>
+                            </div>
+                            <div class="flex-1">
+                                <p class="text-sm text-gray-400">ステーブルコイン市場（JPYC等）</p>
+                                <p class="text-[11px] text-gray-400 font-normal mt-0.5">拡大する暗号資産・Web3層の決済シェア</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 gap-4 mt-8">
+                    <div class="bg-white p-4 rounded-xl text-center border border-gray-150 shadow-sm">
+                        <span class="text-xs text-gray-500 font-bold block mb-1">開発に必要なリソース</span>
+                        <span class="text-base font-black text-red-600">莫大なコスト・数ヶ月</span>
+                        <span class="text-[10px] text-gray-400 block mt-1">法務確認やノード維持費が継続発生</span>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl text-center border border-gray-150 shadow-sm">
+                        <span class="text-xs text-gray-500 font-bold block mb-1">加盟店への提供価値</span>
+                        <span class="text-base font-black text-gray-700">既存決済のみ</span>
+                        <span class="text-[10px] text-gray-400 block mt-1">先進的な競合PSPへの乗り換えリスク</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full lg:w-[48%] bg-[#f2fbf7] border border-[#d6f2e6] rounded-2xl p-8 shadow-sm flex flex-col justify-between">
+                <div>
+                    <div class="bg-[#00966c] text-white text-center text-base font-bold py-3 px-4 rounded-xl tracking-wide mb-8">
+                        導入後：JPYC Gatewayが「黒子」として全リスクを吸収
+                    </div>
+                    
+                    <div class="space-y-4 font-bold text-[#11224d]">
+                        <div class="bg-white p-4 rounded-xl border border-[#d6f2e6] flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-full bg-emerald-50 flex items-center justify-center text-[#00966c] text-xl">
+                                <i class="fa-solid fa-store"></i>
+                            </div>
+                            <div class="flex-1">
+                                <p class="text-sm text-slate-950">加盟店（EC・店舗）</p>
+                                <p class="text-[11px] text-[#00966c] font-normal mt-0.5">貴社の決済画面を選ぶだけでJPYC対応</p>
+                            </div>
+                            <span class="text-xs bg-emerald-600 text-white px-2 py-1 rounded">満足度向上</span>
+                        </div>
+
+                        <div class="text-center text-[#00966c] my-1">
+                            <i class="fa-solid fa-arrow-down text-lg"></i>
+                        </div>
+
+                        <div class="bg-white p-4 rounded-xl border-2 border-[#00966c] shadow-md relative overflow-hidden">
+                            <div class="flex items-center justify-between gap-2">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-slate-700 text-lg">
+                                        <i class="fa-solid fa-network-wired"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-xs text-slate-900">貴社の既存システム</p>
+                                        <p class="text-[10px] text-gray-500 font-normal">既存の管理画面・接続方法</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="text-[#00966c] px-1 text-sm animate-pulse">
+                                    <i class="fa-solid fa-link"></i> <span class="text-[10px] block font-normal text-center">API</span>
+                                </div>
+
+                                <div class="bg-emerald-50 border border-emerald-200 rounded-lg p-2 flex items-center justify-center min-w-[100px]">
+                                    <img src="img/logo.png" alt="JPYC Gateway" class="h-6 w-auto object-contain">
+                                </div>
+                            </div>
+                            <div class="mt-2 pt-2 border-t border-dashed border-gray-150 text-[11px] text-[#00966c] font-normal flex justify-between">
+                                <span>※ブロックチェーン処理・法規制対応はすべてJPYC Gateway側で完結</span>
+                            </div>
+                        </div>
+
+                        <div class="text-center text-[#00966c] my-1">
+                            <i class="fa-solid fa-arrow-down text-lg"></i>
+                        </div>
+
+                        <div class="bg-emerald-900 text-white p-4 rounded-xl flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-full bg-emerald-800 flex items-center justify-center text-emerald-300 text-xl">
+                                <i class="fa-solid fa-circle-dollar-to-slot"></i>
+                            </div>
+                            <div class="flex-1">
+                                <p class="text-sm font-bold">ステーブルコイン決済の自動実装</p>
+                                <p class="text-[11px] text-emerald-200 font-normal mt-0.5">法廷通貨と同等の手軽さで次世代決済を流通</p>
+                            </div>
+                            <span class="text-xs bg-emerald-500 text-white px-2 py-1 rounded font-black">シェア拡大</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 gap-4 mt-8">
+                    <div class="bg-white p-4 rounded-xl text-center border border-[#d6f2e6] shadow-sm">
+                        <span class="text-xs text-[#00966c] font-extrabold block mb-1">開発に必要なリソース</span>
+                        <span class="text-base font-black text-[#00966c]">API連携</span>
+                        <span class="text-[10px] text-[#00966c]/80 block mt-1">自社でのWeb3開発コストはゼロ</span>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl text-center border border-[#d6f2e6] shadow-sm">
+                        <span class="text-xs text-[#00966c] font-extrabold block mb-1">加盟店への提供価値</span>
+                        <span class="text-base font-black text-[#00966c]">新領域へのサービス展開</span>
+                        <span class="text-[10px] text-[#00966c]/80 block mt-1">次世代決済対応PSPとして差別化</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="mt-24">
+        <h2 class="text-3xl font-bold text-center text-slate-900 mb-12">このユースケースにおける効果</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            
+            <div class="bg-emerald-50/40 border border-emerald-100 rounded-2xl p-8 text-center flex flex-col justify-between shadow-sm">
+                <div>
+                    <div class="w-14 h-14 mx-auto bg-white rounded-full flex items-center justify-center border border-emerald-200 text-emerald-600 mb-5 shadow-sm text-xl">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-emerald-600">自社開発コストの最小化</h3>
+                    <p class="text-base text-slate-700 font-bold mt-4 leading-relaxed">
+                        ブロックチェーン対応に必要な仕組みを<br>
+                        <span class="text-2xl text-emerald-600 font-black">API連携で即時実装</span>
+                    </p>
+                </div>
+                <div class="bg-emerald-50 border border-emerald-200 text-emerald-600 text-sm font-bold py-2 px-4 rounded-full mt-8 inline-block">
+                    Web3人材の確保やノード構築は一切不要
+                </div>
+            </div>
+
+            <div class="bg-blue-50/40 border border-blue-100 rounded-2xl p-8 text-center flex flex-col justify-between shadow-sm">
+                <div>
+                    <div class="w-14 h-14 mx-auto bg-white rounded-full flex items-center justify-center border border-blue-200 text-blue-600 mb-5 shadow-sm text-xl">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-blue-600">法規制・管理リスクの回避</h3>
+                    <p class="text-base text-slate-700 font-bold mt-4 leading-relaxed">
+                        複雑な法規制対応やカストディ業務を<br>
+                        <span class="text-2xl text-blue-600 font-black">「JPYC Gateway」で完結</span>
+                    </p>
+                </div>
+                <div class="bg-blue-50 border border-blue-200 text-blue-600 text-sm font-bold py-2 px-4 rounded-full mt-8 inline-block">
+                    法律上のリスクを負わずに新決済を提供可能
+                </div>
+            </div>
+
+            <div class="bg-amber-50/40 border border-amber-100 rounded-2xl p-8 text-center flex flex-col justify-between shadow-sm">
+                <div>
+                    <div class="w-14 h-14 mx-auto bg-white rounded-full flex items-center justify-center border border-amber-200 text-amber-600 mb-5 shadow-sm text-xl">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-amber-600">新領域での競争力強化</h3>
+                    <p class="text-base text-slate-700 font-bold mt-4 leading-relaxed">
+                        拡大するステーブルコイン決済の需要を捉え<br>
+                        <span class="text-2xl text-amber-600 font-black">加盟店の新規開拓を加速</span>
+                    </p>
+                </div>
+                <div class="bg-amber-50 border border-amber-200 text-amber-600 text-sm font-bold py-2 px-4 rounded-full mt-8 inline-block">
+                    次世代決済対応PSPとして強力な差別化
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="grid lg:grid-cols-12 gap-8 mt-28 items-stretch">
+        <div class="lg:col-span-4 border border-gray-200 rounded-2xl p-8 bg-white flex flex-col justify-between shadow-sm">
+            <div>
+                <h3 class="font-bold text-lg border-b border-gray-100 pb-4 mb-6 text-slate-900">抱えていた課題</h3>
+                <ul class="space-y-6 text-base">
+                    <li class="flex items-start">
+                        <i class="fa-solid fa-circle-exclamation text-amber-500 mt-1 mr-3 flex-shrink-0 text-lg"></i>
+                        <div>
+                            <strong class="block text-slate-800 mb-1.5 font-bold">ブロックチェーン対応のノウハウ不足</strong>
+                            <p class="text-gray-500 leading-relaxed text-sm">加盟店からのステーブルコイン決済の要望はあるものの、自社に専門エンジニアがおらず、独自でノード構築やスマートコントラクトを開発・運用するハードルが非常に高かった。</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fa-solid fa-circle-exclamation text-amber-500 mt-1 mr-3 flex-shrink-0 text-lg"></i>
+                        <div>
+                            <strong class="block text-slate-800 mb-1.5 font-bold">暗号資産に関連するリスク対応</strong>
+                            <p class="text-gray-500 leading-relaxed text-sm">
+                                ステーブルコインを取り扱うにあたり、法的コンプライアンスの確認や、カストディ業務に伴うセキュリティリスク、監査対応を自社だけでカバーするのが困難だった。
+                            </p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fa-solid fa-circle-exclamation text-amber-500 mt-1 mr-3 flex-shrink-0 text-lg"></i>
+                        <div>
+                            <strong class="block text-slate-800 mb-1.5 font-bold">莫大な開発コストと機会損失のジレンマ</strong>
+                            <p class="text-gray-500 leading-relaxed text-sm">
+                                イチから自社インフラを構築するには膨大な初期投資と期間が必要となるため断念せざるを得ず、結果として先進的な次世代決済を求める成長企業の加盟店を競合他社に奪われるリスクに直面していた。
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="lg:col-span-4 border border-gray-200 rounded-2xl p-8 bg-white shadow-sm">
+            <h3 class="font-bold text-lg border-b border-gray-100 pb-4 mb-6 text-slate-900">JPYC Gatewayでの解決フロー</h3>
+            <ol class="space-y-6 text-base">
+                <li class="flex items-start">
+                    <span class="w-7 h-7 bg-[#00966c] text-white font-bold flex items-center justify-center rounded-full mr-3 flex-shrink-0 text-sm">1</span>
+                    <div>
+                        <strong class="block text-slate-800 mb-1.5 font-bold">既存システムとGatewayをAPI接続</strong>
+                        <p class="text-gray-500 leading-relaxed text-sm">
+                            貴社決済代行サービスのコアシステムとJPYC GatewayをAPIでシームレスに連携。ブロックチェーンに関する独自のインフラ開発や新規ノード構築は一切不要です。
+                        </p>
+                    </div>
+                </li>
+                <li class="flex items-start">
+                    <span class="w-7 h-7 bg-[#00966c] text-white font-bold flex items-center justify-center rounded-full mr-3 flex-shrink-0 text-sm">2</span>
+                    <div>
+                        <strong class="block text-slate-800 mb-1.5 font-bold">負担を抑えて新領域へサービス展開</strong>
+                        <p class="text-gray-500 leading-relaxed text-sm">
+                            ステーブルコインの技術的な仕組みの維持や、セキュリティリスク管理などはJPYC Gatewayが担います。複雑な知識不要で新領域へのサービス展開を進められます。
+                        </p>       
+                    </div>
+                </li>
+                <li class="flex items-start">
+                    <span class="w-7 h-7 bg-[#00966c] text-white font-bold flex items-center justify-center rounded-full mr-3 flex-shrink-0 text-sm">3</span>
+                    <div>
+                        <strong class="block text-slate-800 mb-1.5 font-bold">最小投資で、次世代決済市場へ</strong>
+                        <p class="text-gray-500 leading-relaxed text-sm">
+                            自社で莫大な開発コストをかけてインフラを構築する必要はありません。JPYC Gatewayを組み込むだけで、極めて低い初期投資と圧倒的な短期間でステーブルコイン決済への対応が完了します。
+                        </p>
+                    </div>
+                </li>
+            </ol>
+        </div>
+
+        <div class="lg:col-span-4 border border-gray-200 rounded-2xl p-8 bg-white flex flex-col shadow-sm">
+            <h3 class="font-bold text-lg border-b border-gray-100 pb-4 mb-6 text-slate-900">劇的な導入効果（比較表）</h3>
+            <div class="text-sm flex-1 flex flex-col justify-between space-y-5">
+                
+                <div class="grid grid-cols-3 gap-2 font-bold text-center items-center">
+                    <div class="text-gray-400 text-xs">比較項目</div>
+                    <div class="bg-slate-100 text-slate-700 py-2 rounded-lg text-xs leading-tight">自社構築の場合</div>
+                    <div class="bg-[#00966c] text-white py-2 rounded-lg text-xs leading-tight text-center">Gateway利用</div>
+                </div>
+                
+                <!-- 比較1: 開発コスト -->
+                <div class="grid grid-cols-3 gap-2 items-center border-b border-gray-50 pb-4">
+                    <div class="text-gray-500 font-bold text-xs flex justify-center items-center">
+                        <i class="fa-solid fa-code mr-1 text-slate-400"></i>開発コスト
+                    </div>
+                    <div class="text-center text-slate-700 font-medium text-xs leading-tight">
+                        数千万円規模<br>
+                        <span class="text-[10px] text-gray-400">(Web3開発)</span>
+                    </div>
+                    <div class="text-center text-emerald-600 font-bold bg-emerald-50 py-2 rounded-lg text-xs leading-tight">
+                        <strong class="text-sm font-black">大幅に抑制</strong><br>
+                        <span class="text-[10px] text-emerald-600 block mt-0.5">(API連携)</span>
+                    </div>
+                </div>
+                
+                <!-- 比較2: 管理・運用負担 -->
+                <div class="grid grid-cols-3 gap-2 items-center border-b border-gray-50 pb-4">
+                    <div class="text-gray-500 font-bold text-xs flex justify-center items-center">
+                        <i class="fa-solid fa-shield-halved mr-1 text-slate-400"></i>資産の管理負担
+                    </div>
+                    <div class="text-center text-slate-600 text-xs font-bold">
+                        自社で抱える<br>
+                        <span class="text-[10px] text-gray-400">(要件の整備)</span>
+                    </div>
+                    <div class="text-center text-emerald-600 font-bold bg-emerald-50 py-2 rounded-lg text-xs font-black">
+                        Gateway側が担当<br>
+                        <span class="text-[10px] text-emerald-600 block mt-0.5">(直接の管理負担なし)</span>
+                    </div>
+                </div>
+                
+                <!-- 比較3: 提供価値・競争力 -->
+                <div class="grid grid-cols-3 gap-2 items-center">
+                    <div class="text-gray-500 font-bold text-xs flex justify-center items-center">
+                        <i class="fa-solid fa-chart-line mr-1 text-slate-400"></i>加盟店への訴求
+                    </div>
+                    <div class="text-center text-slate-600 text-[11px] leading-tight">
+                        既存決済のみでは他社PSPとの差別化が難しい。
+                    </div>
+                    <div class="text-center text-emerald-600 font-bold bg-emerald-50 p-2 rounded-lg text-[11px] leading-tight flex flex-col justify-center items-center">
+                        <strong class="font-bold">提案力が大幅UP</strong>
+                        <span class="text-[10px] text-emerald-600 block mt-0.5">次世代決済で新領域を開拓</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-28 border-t border-gray-100 pt-16 text-center">
+        <h2 class="text-2xl md:text-3xl font-bold text-slate-900 tracking-tight">ステーブルコイン決済への対応を、最小限の開発・運用負担で実現しませんか？</h2>
+        <p class="text-lg md:text-xl font-bold text-[#00966c] mt-4">JPYC Gatewayが、貴社決済代行サービスのインフラとして機能し、新領域への迅速なサービス展開と提案力強化を支えます。</p>
+        <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center items-center w-full">
+            <a href="https://www.asteria.com/jp/contact/reqdoc/" class="inline-flex items-center justify-center bg-[#00966c] hover:bg-emerald-700 text-white font-bold text-lg px-8 py-5 rounded-xl shadow-md transition group w-full sm:w-64">
+                <span>資料請求</span>
+                <i class="fa-solid fa-chevron-right text-base transform group-hover:translate-x-1 transition-transform ml-3"></i>
+            </a>
+
+            <a href="https://www.asteria.com/jp/contact/entry/" class="inline-flex items-center justify-center bg-[#00966c] hover:bg-emerald-700 text-white font-bold text-lg px-8 py-5 rounded-xl shadow-md transition group w-full sm:w-64">
+                <span>お問い合わせ</span>
+                <i class="fa-solid fa-chevron-right text-base transform group-hover:translate-x-1 transition-transform ml-3"></i>
+            </a>
+        </div>
+    </div>
+  </main>
+
+  <footer class="bg-navy pt-24 pb-12 text-white/90 border-t border-white/10">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row justify-between gap-20 mb-20">
+                <div class="max-w-xs">
+                    <div class="flex items-center">
+                         <a href="#">
+                             <img src="img/logo_white.svg" alt="JPYC Gateway" class="h-12 md:h-16 w-auto">
+                        </a>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-12">
+                    <div class="space-y-4">
+                        <p class="font-black text-white text-xs tracking-widest">PRODUCT</p>
+                        <ul class="space-y-3 text-sm font-bold text-slate-400">
+                            <li><a href="features" class="hover:text-brand-green transition">機能一覧</a></li>
+                            <li><a href="#integration" class="hover:text-brand-green transition">連携システム</a></li>
+                        </ul>
+                    </div>
+                    <div class="space-y-4">
+                        <p class="font-black text-white text-xs tracking-widest">RESOURCES</p>
+                        <ul class="space-y-3 text-sm font-bold text-slate-400">
+                            <li><a href="https://jpycgateway.com/blog.html" class="hover:text-brand-green transition">ブログ</a></li>
+                            <li><a href="#" class="hover:text-brand-green transition">ユースケース</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row justify-between items-center text-[10px] font-bold text-slate-500 gap-4 pt-8 border-t border-white/5">
+                <p>&copy; 1998-2026 Asteria Corporation. All Rights reserved.</p>
+                <div class="flex gap-8">
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="hover:text-white transition">利用規約</a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="hover:text-white transition">サポート規約</a>
+                    <a href="https://www.asteria.com/jp/privacy/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition">プライバシーポリシー</a>
+                    <a href="https://jp.asteria.com/company/profile/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition">会社概要</a>
+                    <a href="https://www.asteria.com/jp/terms/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition">アステリア製品共通利用規約</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
